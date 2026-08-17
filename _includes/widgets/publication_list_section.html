@@ -10,7 +10,7 @@
                 <h4>{{ item.title }}</h4>
                 <p class="publication-compact-authors">{{ item.authors | replace: 'Jian Du', '<strong>Jian Du</strong>' }}</p>
                 <p class="publication-compact-venue">
-                    <strong><i>{{ item.journal }}</i>{% if include.show_metrics and item.jif %} · {% if page.locale == 'zh' %}影响因子 {{ item.jif }}{% else %}JIF {{ item.jif }}{% endif %} · JCR {{ item.jcr_quartile }}{% endif %}</strong>
+                    <strong><i>{{ item.journal }}</i>{% if include.show_metrics and item.jif %} · IF {{ item.jif }} · JCR {{ item.jcr_quartile }}{% endif %}</strong>
                     {% if item.doi %}<span aria-hidden="true"> · </span><a href="https://doi.org/{{ item.doi }}" target="_blank" rel="noopener noreferrer">DOI</a>{% elsif item.url %}<span aria-hidden="true"> · </span><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{% if page.locale == 'zh' %}链接{% else %}Link{% endif %}</a>{% endif %}
                 </p>
             </article>
