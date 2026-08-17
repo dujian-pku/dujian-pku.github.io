@@ -1,7 +1,6 @@
 {% assign items_by_year = include.items | group_by: "year" %}
 <section id="{{ include.section_id }}" class="publication-list-section section-anchor" aria-labelledby="{{ include.section_id }}-heading">
     <h2 id="{{ include.section_id }}-heading">{% if page.locale == 'zh' %}{{ include.title_zh }}{% else %}{{ include.title_en }}{% endif %}</h2>
-    {% if include.preprint %}<p class="publication-type-note">{% if page.locale == 'zh' %}以下成果尚未经过期刊同行评议。{% else %}The following works have not yet undergone journal peer review.{% endif %}</p>{% endif %}
     {% for year in items_by_year %}
     <div class="publication-year-group">
         <h3>{{ year.name }}</h3>
