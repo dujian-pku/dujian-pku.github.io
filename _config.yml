@@ -13,11 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "杜建 | 北京大学"
-description: "杜建，北京大学健康医疗大数据国家研究院长聘副教授、研究员、博士生导师。研究方向包括健康医疗大数据、医学知识图谱、生物医学自然语言处理与智能循证决策。"
+title: "Jian Du | Peking University"
+description: "Jian Du is a tenured associate professor, researcher, and PhD supervisor at the National Institute of Health Data Science at Peking University."
 url: "https://dujian-pku.github.io"
 baseurl: ""
-lang: "zh-CN"
+lang: "en"
 
 # Build settings
 markdown: kramdown
@@ -40,7 +40,16 @@ exclude:
   - _posts
   - _showcase
   - assets/css/blog.css
+  - assets/css/images
   - assets/js/blog.js
+  - assets/js/common.js
+  - assets/js/bubble_visual_hash.js
+  - assets/js/semantic_scholar_citation_count.js
+  - assets/images/badges
+  - assets/images/covers
+  - assets/images/etc
+  - assets/images/empty_300x200.png
+  - assets/images/photos/portrait.jpg
 
 timezone: Asia/Shanghai
 

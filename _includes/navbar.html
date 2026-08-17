@@ -1,25 +1,33 @@
-<nav class="navbar navbar-expand-sm navbar-light fixed-top mb-5 shadow-sm">
-    <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
-        <a class="navbar-brand" href="{{ '/' | relative_url }}" aria-label="返回首页">
-            <strong>{{site.data.profile.navbar_name}}</strong>
-            <span class="navbar-brand-en">Jian Du</span>
-        </a>
-        <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="sr-only">展开导航</span><i class="fas fa-bars" aria-hidden="true"></i>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                {% for item in site.data.navigation.pages %}
-                <li class="nav-item {% if item.name == page.navbar_title or include.active_page == item.name %}active{% endif %}">
-                    {% if item.external %}
-                    <a class="nav-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.name }} <span aria-hidden="true">↗</span></a>
-                    {% else %}
-                    <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.name }}</a>
-                    {% endif %}
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-</nav>
+{% if page.locale == 'zh' %}
+  {% assign home_url = '/zh/' %}
+  {% assign publications_url = '/zh/publications/' %}
+  {% assign home_label = '首页' %}
+  {% assign publications_label = '研究成果' %}
+  {% assign language_label = 'English' %}
+  {% assign language_url = page.alternate_url | default: '/' %}
+  {% assign brand_primary = '杜建' %}
+  {% assign brand_secondary = 'Jian Du' %}
+{% else %}
+  {% assign home_url = '/' %}
+  {% assign publications_url = '/publications/' %}
+  {% assign home_label = 'Home' %}
+  {% assign publications_label = 'Publications' %}
+  {% assign language_label = '中文' %}
+  {% assign language_url = page.alternate_url | default: '/zh/' %}
+  {% assign brand_primary = 'Jian Du' %}
+  {% assign brand_secondary = 'Peking University' %}
+{% endif %}
+<header class="site-header">
+  <div class="site-shell header-inner">
+    <a class="wordmark" href="{{ home_url | relative_url }}" aria-label="{{ home_label }}">
+      <strong>{{ brand_primary }}</strong>
+      <span>{{ brand_secondary }}</span>
+    </a>
+    <nav class="site-nav" aria-label="{% if page.locale == 'zh' %}主导航{% else %}Primary navigation{% endif %}">
+      <a{% if page.navbar_title == home_label %} class="active" aria-current="page"{% endif %} href="{{ home_url | relative_url }}">{{ home_label }}</a>
+      <a{% if page.navbar_title == publications_label %} class="active" aria-current="page"{% endif %} href="{{ publications_url | relative_url }}">{{ publications_label }}</a>
+      <a href="https://orcid.org/0000-0001-8436-778X" target="_blank" rel="noopener noreferrer">ORCID</a>
+      <a class="language-switch" href="{{ language_url | relative_url }}" hreflang="{% if page.locale == 'zh' %}en{% else %}zh-CN{% endif %}">{{ language_label }}</a>
+    </nav>
+  </div>
+</header>

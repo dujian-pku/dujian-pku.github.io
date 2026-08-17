@@ -1,0 +1,191 @@
+{% if page.locale == 'zh' %}
+  {% assign profile = site.data.profile %}
+  {% assign label_profile = '个人简介' %}
+  {% assign label_research = '研究方向' %}
+  {% assign label_platforms = '平台与工具' %}
+  {% assign label_appointments = '工作经历' %}
+  {% assign label_education = '教育经历' %}
+  {% assign label_honors = '荣誉与奖励' %}
+  {% assign label_projects = '代表性项目' %}
+  {% assign label_teaching = '课程教学' %}
+  {% assign label_news = '最新动态' %}
+  {% assign label_publications = '代表性论文' %}
+  {% assign label_all_publications = '查看全部论文' %}
+  {% assign publications_url = '/zh/publications/' %}
+  {% assign profile_link_label = '北京大学主页' %}
+{% else %}
+  {% assign profile = site.data.profile_en %}
+  {% assign label_profile = 'Profile' %}
+  {% assign label_research = 'Research' %}
+  {% assign label_platforms = 'Platforms & Tools' %}
+  {% assign label_appointments = 'Appointments' %}
+  {% assign label_education = 'Education' %}
+  {% assign label_honors = 'Honors' %}
+  {% assign label_projects = 'Selected Projects' %}
+  {% assign label_teaching = 'Teaching' %}
+  {% assign label_news = 'News' %}
+  {% assign label_publications = 'Selected Publications' %}
+  {% assign label_all_publications = 'All publications' %}
+  {% assign publications_url = '/publications/' %}
+  {% assign profile_link_label = 'Peking University profile' %}
+{% endif %}
+
+<main class="academic-page">
+  <section class="identity" aria-labelledby="profile-name">
+    <figure class="identity-portrait">
+      <img src="{{ profile.portrait_url | relative_url }}" alt="{{ profile.portrait_caption }}">
+    </figure>
+    <div class="identity-copy">
+      <p class="eyebrow">{{ profile.affiliation_short }}</p>
+      <h1 id="profile-name">{{ profile.primary_name }}</h1>
+      <p class="name-secondary">{{ profile.secondary_name }}</p>
+      <p class="role-line">{{ profile.role_line }}</p>
+      <p class="lab-line">{{ profile.lab_line }}</p>
+      <div class="profile-text">{{ profile.short_bio }}</div>
+      <nav class="profile-links" aria-label="{{ label_profile }}">
+        <a href="mailto:{{ profile.email | encode_email }}">{{ profile.email }}</a>
+        <a href="https://orcid.org/{{ profile.orcid }}" target="_blank" rel="noopener noreferrer">ORCID</a>
+        <a href="{{ profile.institutional_profile }}" target="_blank" rel="noopener noreferrer">{{ profile_link_label }}</a>
+      </nav>
+    </div>
+  </section>
+
+  <section class="editorial-section" aria-labelledby="research-heading">
+    <header class="section-heading">
+      <span class="section-index">01</span>
+      <h2 id="research-heading">{{ label_research }}</h2>
+    </header>
+    <ol class="research-list">
+      {% for item in profile.research_areas %}
+      <li>
+        <span class="item-index">{{ forloop.index | prepend: '0' }}</span>
+        <div>
+          <h3>{{ item.title }}</h3>
+          {% if item.en %}<p class="term-translation">{{ item.en }}</p>{% endif %}
+          <p>{{ item.description }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="editorial-section" aria-labelledby="platforms-heading">
+    <header class="section-heading">
+      <span class="section-index">02</span>
+      <h2 id="platforms-heading">{{ label_platforms }}</h2>
+    </header>
+    <div class="platform-list">
+      {% for item in profile.platforms %}
+      <a class="platform-row" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
+        <span class="platform-code">{{ item.name }}</span>
+        <span class="platform-copy">
+          <strong>{{ item.title }}</strong>
+          <span>{{ item.description }}</span>
+        </span>
+        <span class="row-arrow" aria-hidden="true">↗</span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="editorial-section" aria-labelledby="career-heading">
+    <header class="section-heading">
+      <span class="section-index">03</span>
+      <h2 id="career-heading">{% if page.locale == 'zh' %}经历{% else %}Academic Record{% endif %}</h2>
+    </header>
+    <div class="record-columns">
+      <div>
+        <h3 class="column-heading">{{ label_appointments }}</h3>
+        <ol class="record-list">
+          {% for item in profile.experience %}
+          <li>
+            <time>{{ item.date }}</time>
+            <strong>{{ item.name }}</strong>
+            <span>{{ item.position }}</span>
+          </li>
+          {% endfor %}
+        </ol>
+      </div>
+      <div>
+        <h3 class="column-heading">{{ label_education }}</h3>
+        <ol class="record-list">
+          {% for item in profile.education %}
+          <li>
+            <time>{{ item.date }}</time>
+            <strong>{{ item.name }}</strong>
+            <span>{{ item.position }}</span>
+          </li>
+          {% endfor %}
+        </ol>
+      </div>
+      <div>
+        <h3 class="column-heading">{{ label_honors }}</h3>
+        <ol class="record-list compact-record-list">
+          {% for item in profile.awards %}
+          <li>
+            <time>{{ item.date }}</time>
+            <strong>{{ item.name }}</strong>
+          </li>
+          {% endfor %}
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="editorial-section" aria-labelledby="projects-heading">
+    <header class="section-heading">
+      <span class="section-index">04</span>
+      <h2 id="projects-heading">{% if page.locale == 'zh' %}项目与教学{% else %}Projects & Teaching{% endif %}</h2>
+    </header>
+    <div class="projects-layout">
+      <div>
+        <h3 class="column-heading">{{ label_projects }}</h3>
+        <ol class="project-list">
+          {% for item in profile.funding %}
+          <li>
+            <div class="project-meta">{{ item.date }} · {{ item.agency }}{% if item.number != '' %} · {{ item.number }}{% endif %}</div>
+            <div>{{ item.name }}</div>
+          </li>
+          {% endfor %}
+        </ol>
+      </div>
+      <div>
+        <h3 class="column-heading">{{ label_teaching }}</h3>
+        <ol class="project-list teaching-list">
+          {% for item in profile.teaching %}
+          <li>
+            <div class="project-meta">{{ item.date }}</div>
+            <div>{{ item.name }}</div>
+          </li>
+          {% endfor %}
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  {% assign news_items = site.news | sort: 'date' | reverse | slice: 0, 4 %}
+  <section class="editorial-section" aria-labelledby="news-heading">
+    <header class="section-heading">
+      <span class="section-index">05</span>
+      <h2 id="news-heading">{{ label_news }}</h2>
+    </header>
+    <ol class="news-list">
+      {% for item in news_items %}
+      <li>
+        <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: '%Y.%m.%d' }}</time>
+        <div>{% if page.locale == 'zh' %}{{ item.title }}{% else %}{{ item.title_en }}{% endif %}</div>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  {% assign selected_publications = site.publications | sort: 'date' | reverse | where: 'selected', true | slice: 0, 6 %}
+  <section class="editorial-section publications-section" aria-labelledby="selected-publications-heading">
+    <header class="section-heading section-heading-with-link">
+      <span class="section-index">06</span>
+      <h2 id="selected-publications-heading">{{ label_publications }}</h2>
+      <a href="{{ publications_url | relative_url }}">{{ label_all_publications }} →</a>
+    </header>
+    {% include academic_publication_list.html items=selected_publications %}
+  </section>
+</main>

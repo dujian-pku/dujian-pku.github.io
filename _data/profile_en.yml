@@ -1,0 +1,99 @@
+primary_name: "Jian Du"
+secondary_name: "杜建"
+navbar_name: "Jian Du"
+affiliation_short: "National Institute of Health Data Science at Peking University"
+role_line: "Tenured Associate Professor · Researcher · PhD Supervisor"
+lab_line: "Principal Investigator, Computable Biomedical Knowledge Lab"
+
+email: "dujian@bjmu.edu.cn"
+orcid: 0000-0001-8436-778X
+institutional_profile: "https://www.nihds.pku.edu.cn/en/info/1027/1024.htm"
+
+short_bio: >-
+  <p>
+    Jian Du is a tenured associate professor, researcher, and PhD supervisor at the National Institute of Health Data Science at Peking University, where he leads the Computable Biomedical Knowledge Lab. He joined Peking University Health Science Center in November 2019 after working at the Institute of Medical Information, Chinese Academy of Medical Sciences and Peking Union Medical College.
+  </p>
+  <p>
+    His research examines how biomedical knowledge can be represented, computed, and used in evidence-informed decisions. Current work spans biomedical knowledge graphs, natural language processing, causal diagrams, evidence triangulation, and the analysis of science-to-technology translation.
+  </p>
+  <p class="profile-source">
+    Sources: <a href="https://www.nihds.pku.edu.cn/en/info/1027/1024.htm" target="_blank" rel="noopener noreferrer">Peking University profile</a> · <a href="https://orcid.org/0000-0001-8436-778X" target="_blank" rel="noopener noreferrer">ORCID</a>
+  </p>
+
+portrait_url: /assets/images/photos/jian-du.jpg
+portrait_caption: "Jian Du"
+
+education:
+- name: Nanjing University
+  position: PhD in Information Resource Management
+  date: "2017"
+- name: Huazhong University of Science and Technology
+  position: MSc in Medical Informatics
+  date: "2010"
+- name: Binzhou Medical University
+  position: BSc in Medical Informatics
+  date: "2008"
+
+experience:
+- name: National Institute of Health Data Science at Peking University
+  position: Tenured Associate Professor, Researcher, and PhD Supervisor
+  date: 2019.11–present
+- name: Institute of Medical Information, Chinese Academy of Medical Sciences and Peking Union Medical College
+  position: Assistant Researcher and Associate Researcher
+  date: 2010.08–2019.10
+
+awards:
+- name: CNKI Top 1% Highly Cited Scholar
+  date: "2024"
+- name: Young Information Scientist Award, Chinese Society for Scientific and Technical Information
+  date: "2017"
+- name: Young Elite Scientists Sponsorship Program by CAST
+  date: "Selected"
+
+research_areas:
+- title: Computable Biomedical Knowledge
+  description: Representing findings from the biomedical literature as searchable, computable, and reusable knowledge objects for research and decision support.
+- title: Biomedical Knowledge Graphs and Natural Language Processing
+  description: Extracting entities, relations, and evidential context from publications and clinical research resources to build traceable knowledge networks.
+- title: Causal Diagrams and Evidence Triangulation
+  description: Using directed acyclic graphs to formalize causal assumptions and synthesizing the direction, bias structure, and convergence of evidence across study designs.
+- title: Biomedical Science and Technology Analytics
+  description: Linking publications, patents, clinical trials, and disease-burden data to study how biomedical knowledge is produced, translated, and applied.
+
+platforms:
+- name: CBK System
+  title: Computable Biomedical Knowledge System
+  url: https://cbk.bjmu.edu.cn/
+  description: Search and evidence tracing across SemMedDB semantic triples, with support for mechanistic-pathway exploration and candidate causal-diagram construction.
+- name: HNLP System
+  title: Health Natural Language Processing System
+  url: https://hnlp.bjmu.edu.cn/
+  description: Natural-language processing and knowledge-extraction tools for biomedical text.
+- name: KG2DAG
+  title: Knowledge Graph-Assisted Causal Diagram Construction
+  url: https://dag.bjmu.edu.cn/
+  description: Knowledge-graph-assisted identification of candidate confounders, mediators, and colliders between an exposure and an outcome.
+
+funding:
+- name: Using Large Language Models and Biomedical Ontologies for Mobilizing the Construction and Applications of Directed Acyclic Graphs in Observational Health Data Research
+  agency: Michigan Medicine–PKUHSC Joint Institute Award · Co-PI
+  number: BMU2026JIUM001
+  date: 2026–2027
+- name: Knowledge Graph-Based Methods for Causal Inference on Adverse Events of Special-Access Drugs and Medical Devices
+  agency: Hainan Provincial Key Research and Development Program · Project Lead
+  number: ""
+  date: 2026–2027
+- name: A Suite of Tools for Automatically Generating Causal Graphs from Biomedical and Epidemiological Research Data
+  agency: National Key Research and Development Program of China · Young Scientist Project
+  number: 2022YFF0712000
+  date: 2022–2025
+- name: "Theory, Methods, and Applications of Representing and Quantifying Uncertain Scientific Knowledge: Medicine as a Case Study"
+  agency: National Natural Science Foundation of China · General Program
+  number: "72074006"
+  date: 2021–2024
+
+teaching:
+- name: Knowledge Discovery in Bibliographic Databases
+  date: Spring 2020–2025
+- name: Biomedical Literature Mining for Network Medicine
+  date: Spring 2024–2025

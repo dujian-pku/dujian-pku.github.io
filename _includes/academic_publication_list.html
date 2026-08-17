@@ -1,0 +1,27 @@
+<ol class="publication-list">
+  {% for item in include.items %}
+  <li class="publication-row">
+    <div class="publication-date">{{ item.date | date: '%Y' }}</div>
+    <article>
+      <h3>{{ item.title }}</h3>
+      <p class="publication-authors">{% include widgets/author_list.html authors=item.authors %}</p>
+      <p class="publication-venue"><em>{{ item.pub }}</em> · {{ item.pub_date }}</p>
+      <p class="publication-abstract">{% if page.locale == 'zh' %}{{ item.abstract }}{% else %}{{ item.abstract_en }}{% endif %}</p>
+      {% if page.locale == 'zh' and item.links_zh %}
+        {% assign publication_links = item.links_zh %}
+      {% else %}
+        {% assign publication_links = item.links %}
+      {% endif %}
+      <p class="publication-links">
+        {% for link in publication_links %}
+        {% if link[1].url %}
+        <a target="{{ link[1].target | default: '_blank' }}" rel="noopener noreferrer" href="{{ link[1].url }}">{{ link[0] }}</a>
+        {% else %}
+        <a target="_blank" rel="noopener noreferrer" href="{{ link[1] }}">{{ link[0] }}</a>
+        {% endif %}
+        {% endfor %}
+      </p>
+    </article>
+  </li>
+  {% endfor %}
+</ol>
