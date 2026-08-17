@@ -3,7 +3,7 @@
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body p-4">
-                <h3 id="research-heading" class="card-section-heading">{% if page.locale == 'zh' %}研究方向 <span class="section-title-en">Research</span>{% else %}Research <span class="section-title-en">研究方向</span>{% endif %}</h3>
+                <h3 id="research-heading" class="card-section-heading">{% if page.locale == 'zh' %}研究方向 <span class="section-title-en">Research</span>{% else %}Research{% endif %}</h3>
                 <div class="research-grid">
                     {% for item in profile.research_areas %}
                     <article class="research-item">

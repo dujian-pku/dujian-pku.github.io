@@ -1,7 +1,7 @@
 {% assign publications = include.publications %}
 <div class="my-3 p-0 bg-white shadow-sm rounded-xl">
     <h6 class="border-bottom border-gray p-3 mb-0">
-        {% if include.title %}{{ include.title }}{% elsif page.locale == 'zh' %}代表性论文 <span class="section-title-en">Selected Publications</span>{% else %}Selected Publications <span class="section-title-en">代表性论文</span>{% endif %}
+        {% if include.title %}{{ include.title }}{% elsif page.locale == 'zh' %}代表性论文 <span class="section-title-en">Selected Publications</span>{% else %}Selected Publications{% endif %}
     </h6>
     {% for item in publications limit:include.limit %}
         {% include widgets/publication_item.html item=item first=false last=false %}    
