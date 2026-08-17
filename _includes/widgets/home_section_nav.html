@@ -1,0 +1,14 @@
+<nav class="home-section-nav" aria-label="{% if page.locale == 'zh' %}主页栏目{% else %}Homepage sections{% endif %}">
+    <a href="#profile">{% if page.locale == 'zh' %}个人简介{% else %}Profile{% endif %}</a>
+    <a href="#research">{% if page.locale == 'zh' %}研究方向{% else %}Research{% endif %}</a>
+    <a href="#platforms">{% if page.locale == 'zh' %}平台与工具{% else %}Platforms{% endif %}</a>
+    {% if site.data.display.homepage.show_experience %}
+    <a href="#education">{% if page.locale == 'zh' %}教育经历{% else %}Education{% endif %}</a>
+    <a href="#appointments">{% if page.locale == 'zh' %}工作经历{% else %}Appointments{% endif %}</a>
+    <a href="#honors">{% if page.locale == 'zh' %}荣誉与奖励{% else %}Honors{% endif %}</a>
+    {% endif %}
+    <a href="#projects">{% if page.locale == 'zh' %}科研项目{% else %}Projects{% endif %}</a>
+    <a href="#teaching">{% if page.locale == 'zh' %}课程教学{% else %}Teaching{% endif %}</a>
+    {% if site.data.display.homepage.show_news %}<a href="#news">{% if page.locale == 'zh' %}最新动态{% else %}News{% endif %}</a>{% endif %}
+    {% if site.data.display.homepage.show_selected_publications %}<a href="#publications">{% if page.locale == 'zh' %}代表性论文{% else %}Publications{% endif %}</a>{% endif %}
+</nav>

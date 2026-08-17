@@ -1,28 +1,34 @@
 {% if page.locale == 'zh' %}{% assign profile = site.data.profile %}{% else %}{% assign profile = site.data.profile_en %}{% endif %}
-<section class="row mt-3" aria-labelledby="academic-heading">
+<section id="projects" class="row mt-3 section-anchor" aria-labelledby="projects-heading">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body p-4">
-                <h3 id="academic-heading" class="card-section-heading">{% if page.locale == 'zh' %}项目与教学 <span class="section-title-en">Projects & Teaching</span>{% else %}Projects & Teaching{% endif %}</h3>
-                <div class="academic-columns">
-                    <div>
-                        <h4 class="academic-subheading">{% if page.locale == 'zh' %}代表性主持项目{% else %}Selected Projects{% endif %}</h4>
-                        {% for item in profile.funding %}
-                        <article class="academic-item">
-                            <div class="academic-meta">{{ item.agency }}{% if item.number != "" %} · {{ item.number }}{% endif %} · {{ item.date }}</div>
-                            <div>{{ item.name }}</div>
-                        </article>
-                        {% endfor %}
-                    </div>
-                    <div>
-                        <h4 class="academic-subheading">{% if page.locale == 'zh' %}课程教学{% else %}Teaching{% endif %}</h4>
-                        {% for item in profile.teaching %}
-                        <article class="academic-item">
-                            <div class="academic-meta">{{ item.date }}</div>
-                            <div>{{ item.name }}</div>
-                        </article>
-                        {% endfor %}
-                    </div>
+                <h3 id="projects-heading" class="card-section-heading">{% if page.locale == 'zh' %}科研项目 <span class="section-title-en">Projects</span>{% else %}Projects{% endif %}</h3>
+                <div class="academic-list">
+                    {% for item in profile.funding %}
+                    <article class="academic-item">
+                        <div class="academic-meta">{{ item.agency }}{% if item.number != "" %} · {{ item.number }}{% endif %} · {{ item.date }}</div>
+                        <div>{{ item.name }}</div>
+                    </article>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="teaching" class="row mt-3 section-anchor" aria-labelledby="teaching-heading">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body p-4">
+                <h3 id="teaching-heading" class="card-section-heading">{% if page.locale == 'zh' %}课程教学 <span class="section-title-en">Teaching</span>{% else %}Teaching{% endif %}</h3>
+                <div class="academic-list">
+                    {% for item in profile.teaching %}
+                    <article class="academic-item">
+                        <div class="academic-meta">{{ item.date }}</div>
+                        <div>{{ item.name }}</div>
+                    </article>
+                    {% endfor %}
                 </div>
             </div>
         </div>

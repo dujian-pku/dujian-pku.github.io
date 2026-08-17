@@ -1,11 +1,11 @@
 {% if page.locale == 'zh' %}{% assign profile = site.data.profile %}{% else %}{% assign profile = site.data.profile_en %}{% endif %}
 <div class="mt-3 d-md-none"></div>
-<div class="row">
+<div id="profile" class="row section-anchor">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body p-4">
                 <div class="row px-3 pt-3">
-                    <div class="col h3">
+                    <div id="profile-heading" class="col h3">
                         {% if page.locale == 'zh' %}个人简介 <span class="section-title-en">Profile</span>{% else %}Profile{% endif %}
                     </div>
                 </div>

@@ -2,6 +2,7 @@ primary_name: "Jian Du"
 secondary_name: "PhD"
 navbar_name: "Jian Du"
 affiliation_short: "National Institute of Health Data Science at Peking University"
+affiliation_url: "https://www.nihds.pku.edu.cn/en/"
 role_line: "Tenured Associate Professor · Researcher · PhD Supervisor"
 lab_line: "Principal Investigator, Computable Biomedical Knowledge Lab"
 affiliation_lines:

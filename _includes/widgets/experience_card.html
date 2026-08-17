@@ -5,9 +5,9 @@
             <div class="card-body p-4">
                 <div class="row" data-masonry='{"percentPosition": true }'>
                     {% if profile.education %}
-                    <div class="col-lg-6">
+                    <div id="education" class="col-lg-6 section-anchor">
                         <div class="mx-2 my-1">
-                            <h6>{% if page.locale == 'zh' %}教育经历 <span class="section-title-en">Education</span>{% else %}Education{% endif %}</h6>
+                            <h6 id="education-heading">{% if page.locale == 'zh' %}教育经历 <span class="section-title-en">Education</span>{% else %}Education{% endif %}</h6>
                             <ul class="list-unstyled mb-1">
                                 {% for item in profile.education %}
                                 <li class="media mb-1">
@@ -28,9 +28,9 @@
                     {% endif %}
 
                     {% if profile.experience %}
-                    <div class="col-lg-6">
+                    <div id="appointments" class="col-lg-6 section-anchor">
                         <div class="mx-2 my-1">
-                            <h6>{% if page.locale == 'zh' %}工作经历 <span class="section-title-en">Appointments</span>{% else %}Appointments{% endif %}</h6>
+                            <h6 id="appointments-heading">{% if page.locale == 'zh' %}工作经历 <span class="section-title-en">Appointments</span>{% else %}Appointments{% endif %}</h6>
                             <ul class="list-unstyled mb-1">
                                 {% for item in profile.experience %}
                                 <li class="media mb-1">
@@ -51,9 +51,9 @@
                     {% endif %}
 
                     {% if profile.awards %}
-                    <div class="col-lg-6">
+                    <div id="honors" class="col-lg-6 section-anchor">
                         <div class="mx-2 my-1">
-                            <h6>{% if page.locale == 'zh' %}荣誉与奖励 <span class="section-title-en">Honors</span>{% else %}Honors{% endif %}</h6>
+                            <h6 id="honors-heading">{% if page.locale == 'zh' %}荣誉与奖励 <span class="section-title-en">Honors</span>{% else %}Honors{% endif %}</h6>
                             <ul class="list small pl-3 mb-1">
                                 {% for item in profile.awards %}
                                 <li>

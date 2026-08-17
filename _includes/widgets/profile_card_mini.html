@@ -36,11 +36,13 @@
                 <div class="row">
                     <div class="col text-center profile-identity">
                         <div class="profile-affiliation">
+                            {% if profile.affiliation_url %}<a class="profile-affiliation-link" href="{{ profile.affiliation_url }}" target="_blank" rel="noopener noreferrer" aria-label="{% if page.locale == 'zh' %}北京大学健康医疗大数据国家研究院官网{% else %}National Institute of Health Data Science at Peking University website{% endif %}">{% endif %}
                             {% if profile.affiliation_lines %}
                                 {% for line in profile.affiliation_lines %}<span>{{ line }}</span>{% unless forloop.last %}<br>{% endunless %}{% endfor %}
                             {% else %}
                                 <span>{{ profile.affiliation_short }}</span>
                             {% endif %}
+                            {% if profile.affiliation_url %}</a>{% endif %}
                         </div>
                         <div class="profile-role-lines">
                             {% if profile.role_lines %}
