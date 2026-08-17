@@ -108,3 +108,29 @@ teaching:
   date: Spring 2020–2025
 - name: Biomedical Literature Mining for Network Medicine
   date: Spring 2024–2025
+
+services:
+- title: Standards
+  items:
+  - name: Guidance for Constructing Directed Acyclic Graphs in Observational Studies (T/CAS 1152—2025)
+    role: Drafter
+- title: Professional Societies
+  items:
+  - name: Hospital Library and Information Specialized Committee, Chinese Hospital Association
+    role: Standing Committee Member and Secretary-General
+  - name: Health Data Science Specialized Committee, Chinese Hospital Association
+    role: Standing Committee Member
+  - name: Medical Informatics Branch, Chinese Medical Association
+    role: Committee Member
+  - name: Bioinformatics Branch, Chinese Preventive Medicine Association
+    role: Committee Member
+  - name: Scientometrics and Informetrics Branch, China Science and Technology Policy Research Association
+    role: Committee Member
+- title: Editorial Boards
+  items:
+  - name: Scientific Data
+    role: Editorial Board Member, 2024–present
+  - name: Health Data Science
+    role: Editorial Board Member, 2021–present
+  - name: BMC Medical Informatics and Decision Making
+    role: Editorial Board Member, 2024–present

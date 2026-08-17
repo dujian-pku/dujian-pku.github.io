@@ -8,7 +8,7 @@
     margin: 0 0 1rem;
     padding: 0.15rem 0 0.75rem;
     border-bottom: 1px solid var(--line);
-    font-size: 0.86rem;
+    font-size: var(--font-size-nav);
     line-height: 1.45;
 }
 

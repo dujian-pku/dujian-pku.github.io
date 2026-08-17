@@ -5,7 +5,7 @@
 }
 
 .publication-list-header h1 {
-    font-size: 2rem;
+    font-size: var(--font-size-page-title);
     margin-bottom: 0.55rem;
 }
 
@@ -19,7 +19,7 @@
     flex-wrap: wrap;
     gap: 0.35rem 1.2rem;
     margin-top: 0.85rem;
-    font-size: 0.9rem;
+    font-size: var(--font-size-nav);
 }
 
 .publication-section-nav a {
@@ -31,7 +31,7 @@
 }
 
 .publication-list-section > h2 {
-    font-size: 1.45rem;
+    font-size: var(--font-size-section-title);
     margin: 0 0 1.1rem;
 }
 
@@ -44,7 +44,7 @@
 
 .publication-year-group > h3 {
     color: var(--pku-red);
-    font-size: 1.05rem;
+    font-size: var(--font-size-subtitle);
     line-height: 1.4;
     margin: 0;
 }
@@ -59,14 +59,14 @@
 }
 
 .publication-compact-item h4 {
-    font-size: 1rem;
+    font-size: var(--font-size-subtitle);
     font-weight: 500;
     line-height: 1.45;
     margin: 0 0 0.22rem;
 }
 
 .publication-compact-item p {
-    font-size: 0.86rem;
+    font-size: var(--font-size-body);
     line-height: 1.5;
     margin: 0;
 }

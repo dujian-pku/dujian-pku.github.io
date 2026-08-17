@@ -1,0 +1,25 @@
+{% if page.locale == 'zh' %}{% assign profile = site.data.profile %}{% else %}{% assign profile = site.data.profile_en %}{% endif %}
+<section id="services" class="row mt-3 section-anchor" aria-labelledby="services-heading">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body p-4">
+                <h3 id="services-heading" class="card-section-heading">{% if page.locale == 'zh' %}学术服务 <span class="section-title-en">Services</span>{% else %}Services{% endif %}</h3>
+                <div class="service-groups">
+                    {% for group in profile.services %}
+                    <section class="service-group">
+                        <h4>{{ group.title }}</h4>
+                        <ul class="service-list">
+                            {% for item in group.items %}
+                            <li>
+                                <div>{{ item.name }}</div>
+                                <div class="service-item-role">{{ item.role }}</div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </section>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -8,6 +8,12 @@
     --paper: #fbfaf7;
     --line: #ded9d2;
     --soft: #f3f0eb;
+    --font-size-body: 1rem;
+    --font-size-page-title: 2rem;
+    --font-size-section-title: 1.5rem;
+    --font-size-subtitle: 1.0625rem;
+    --font-size-meta: 0.875rem;
+    --font-size-nav: 0.9rem;
 }
 
 html {
@@ -16,7 +22,7 @@ html {
 
 body {
     font-family: Arial, "Microsoft YaHei", "微软雅黑", "PingFang SC", sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.68;
     color: var(--ink);
@@ -130,13 +136,17 @@ button:focus-visible {
 
 .profile-name-en {
     color: var(--muted);
-    font-size: 0.92rem;
+    font-size: var(--font-size-body);
     margin-top: -0.35rem;
     margin-bottom: 0.55rem;
 }
 
+.profile-name {
+    font-size: var(--font-size-section-title);
+}
+
 .profile-identity {
-    font-size: 0.9rem;
+    font-size: var(--font-size-body);
     line-height: 1.4;
 }
 
@@ -161,13 +171,13 @@ button:focus-visible {
 
 .profile-lab {
     color: var(--muted);
-    font-size: 0.88rem;
+    font-size: var(--font-size-body);
     line-height: 1.34;
     margin-top: 0.42rem;
 }
 
 .profile-contact {
-    font-size: 0.92rem;
+    font-size: var(--font-size-body);
     margin-top: 0.65rem;
 }
 
@@ -198,7 +208,7 @@ button:focus-visible {
 
 .profile-source {
     color: var(--muted);
-    font-size: 0.82rem;
+    font-size: var(--font-size-meta);
 }
 
 .section-title-en {
@@ -210,8 +220,21 @@ button:focus-visible {
 }
 
 .card-section-heading {
-    font-size: 1.45rem;
+    font-size: var(--font-size-section-title);
     margin: 0 0 1.25rem;
+}
+
+#profile-heading,
+#news-heading,
+#publications-heading {
+    font-size: var(--font-size-section-title);
+    font-weight: 700;
+}
+
+#education-heading,
+#appointments-heading,
+#honors-heading {
+    font-size: var(--font-size-subtitle);
 }
 
 .research-grid {
@@ -232,25 +255,25 @@ button:focus-visible {
 
 .research-index {
     color: var(--pku-red);
-    font-size: 0.82rem;
+    font-size: var(--font-size-meta);
     line-height: 1.65rem;
 }
 
 .research-item h4 {
-    font-size: 1.06rem;
+    font-size: var(--font-size-subtitle);
     margin: 0;
 }
 
 .research-en {
     color: var(--muted);
-    font-size: 0.78rem;
+    font-size: var(--font-size-meta);
     line-height: 1.35;
     margin: 0.14rem 0 0.55rem;
 }
 
 .research-item p {
     color: #514c48;
-    font-size: 0.93rem;
+    font-size: var(--font-size-body);
     line-height: 1.55;
     margin: 0;
 }
@@ -288,7 +311,7 @@ button:focus-visible {
 
 .platform-description {
     color: var(--muted);
-    font-size: 0.92rem;
+    font-size: var(--font-size-body);
 }
 
 .platform-arrow {
@@ -313,7 +336,7 @@ button:focus-visible {
 
 .academic-subheading {
     color: var(--pku-red);
-    font-size: 1.02rem;
+    font-size: var(--font-size-subtitle);
     padding-bottom: 0.45rem;
     margin: 0;
     border-bottom: 1px solid var(--line);
@@ -322,20 +345,24 @@ button:focus-visible {
 .academic-item {
     padding: 0.8rem 0;
     border-bottom: 1px solid var(--line);
-    font-size: 0.95rem;
+    font-size: var(--font-size-body);
 }
 
 .academic-meta {
     color: #4f4742;
-    font-size: 0.93rem;
+    font-size: var(--font-size-body);
     font-weight: 700;
     line-height: 1.45;
     margin-bottom: 0.32rem;
 }
 
 .publication-entry h5 {
-    font-size: 1.03rem;
+    font-size: var(--font-size-subtitle);
     line-height: 1.42;
+}
+
+.section-anchor .small {
+    font-size: var(--font-size-body);
 }
 
 .publication-venue-line {
@@ -349,7 +376,7 @@ button:focus-visible {
 
 .publication-metrics-note {
     color: var(--muted);
-    font-size: 0.86rem;
+    font-size: var(--font-size-meta);
     margin: 1.2rem 0 0.1rem;
 }
 
@@ -360,8 +387,43 @@ button:focus-visible {
 
 .publication-year {
     color: var(--pku-red);
-    font-size: 1.55rem;
+    font-size: var(--font-size-subtitle);
     letter-spacing: 0.02em;
+}
+
+.service-groups {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.service-group {
+    border-top: 1px solid var(--line);
+    padding-top: 0.85rem;
+}
+
+.service-group h4 {
+    color: var(--pku-red);
+    font-size: var(--font-size-subtitle);
+    margin: 0 0 0.65rem;
+}
+
+.service-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.service-list li {
+    font-size: var(--font-size-body);
+    line-height: 1.52;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.service-item-role {
+    color: var(--muted);
+    margin-top: 0.12rem;
 }
 
 .abstract-links a {
@@ -420,6 +482,11 @@ button:focus-visible {
     .academic-columns {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+
+    .service-groups {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
     }
 
     .platform-item {

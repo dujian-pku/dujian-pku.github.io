@@ -115,3 +115,29 @@ teaching:
   date: 2020–2025 春季学期
 - name: 面向网络医学的生物医学文献挖掘
   date: 2024–2025 春季学期
+
+services:
+- title: 标准制定
+  items:
+  - name: 《医学观察性研究有向无环图的构建指南》（T/CAS 1152—2025）
+    role: 起草人
+- title: 学术组织
+  items:
+  - name: 中国医院协会医院情报图书专业委员会
+    role: 常务委员兼秘书长
+  - name: 中国医院协会健康医疗大数据应用管理专业委员会
+    role: 常务委员
+  - name: 中华医学会医学信息学分会
+    role: 委员
+  - name: 中华预防医学会生物信息学分会
+    role: 委员
+  - name: 中国科学学与科技政策研究会科学计量学与信息计量学专业委员会
+    role: 委员
+- title: 期刊服务
+  items:
+  - name: Scientific Data
+    role: 编委，2024–至今
+  - name: Health Data Science
+    role: 编委，2021–至今
+  - name: BMC Medical Informatics and Decision Making
+    role: 编委，2024–至今
