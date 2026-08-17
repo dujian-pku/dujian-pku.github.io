@@ -12,6 +12,9 @@ abstract_en: "Uses a knowledge graph to constrain retrieval and guide a large la
 authors:
   - Shuang Wang
   - Yang Zhang
+  - Ying Gao
+  - Xin He
+  - Guanghui Deng
   - Jian Du
 links:
   Article: https://doi.org/10.1093/jamia/ocaf219

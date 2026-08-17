@@ -1,21 +1,35 @@
-{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
-<p class="publication-metrics-note">
-    {% if page.locale == 'zh' %}期刊指标采用 2025 Journal Citation Reports（2026 年发布）。{% else %}Journal metrics are from the 2025 Journal Citation Reports, released in 2026.{% endif %}
-</p>
-<div class="row">
-    <div class="col-12 col-lg-10">
-        {% for year in pubs_by_year %}
-        <h2 class="pt-4 publication-year" id="year-{{ year.name }}">{{ year.name }}</h2>
-        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
-            {% for item in year.items %}
-                {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
-            {% endfor %}
-        </div>
-        {% endfor %}
-    </div>
-    <div class="col-2 d-none d-lg-block">
-        <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 80px">
-            {% for year in pubs_by_year %}<a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>{% endfor %}
-        </div>
-    </div>
-</div>
+{% assign journal_articles = site.data.publications_full | where: "type", "journal-article" %}
+{% assign conference_papers = site.data.publications_full | where: "type", "conference-paper" %}
+{% assign book_chapters = site.data.publications_full | where: "type", "book-chapter" %}
+{% assign preprints = site.data.publications_full | where: "type", "preprint" %}
+
+<header class="publication-list-header">
+    <h1>{% if page.locale == 'zh' %}全部论文{% else %}All Publications{% endif %}</h1>
+    <p>
+        {% if page.locale == 'zh' %}
+        经公开来源核验的扩展发表列表，包括 {{ journal_articles.size }} 篇期刊论文、{{ conference_papers.size }} 篇会议论文、{{ book_chapters.size }} 篇书籍章节和 {{ preprints.size }} 篇当前预印本。
+        {% else %}
+        An expanded, source-verified list comprising {{ journal_articles.size }} journal articles, {{ conference_papers.size }} conference papers, {{ book_chapters.size }} book chapter, and {{ preprints.size }} current preprints.
+        {% endif %}
+    </p>
+    <p class="publication-source-line">
+        {% if page.locale == 'zh' %}来源：{% else %}Sources: {% endif %}
+        <a href="https://www.nihds.pku.edu.cn/en/info/1027/1024.htm" target="_blank" rel="noopener noreferrer">{% if page.locale == 'zh' %}北京大学个人主页{% else %}Peking University profile{% endif %}</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://orcid.org/0000-0001-8436-778X" target="_blank" rel="noopener noreferrer">ORCID</a>
+        <span aria-hidden="true">·</span>
+        {% if page.locale == 'zh' %}更新于 2026 年 8 月 17 日。{% else %}Updated 17 August 2026.{% endif %}
+    </p>
+    <p class="publication-source-line">{% if page.locale == 'zh' %}期刊指标采用 2025 Journal Citation Reports；仅显示已核验条目。{% else %}Journal metrics use the 2025 Journal Citation Reports and are shown only where verified.{% endif %}</p>
+    <nav class="publication-section-nav" aria-label="{% if page.locale == 'zh' %}发表成果分类{% else %}Publication categories{% endif %}">
+        <a href="#journal-articles">{% if page.locale == 'zh' %}期刊论文{% else %}Journal Articles{% endif %}</a>
+        <a href="#conference-papers">{% if page.locale == 'zh' %}会议论文{% else %}Conference Papers{% endif %}</a>
+        <a href="#book-chapters">{% if page.locale == 'zh' %}书籍章节{% else %}Book Chapter{% endif %}</a>
+        <a href="#preprints">{% if page.locale == 'zh' %}预印本{% else %}Preprints{% endif %}</a>
+    </nav>
+</header>
+
+{% include widgets/publication_list_section.html section_id="journal-articles" title_en="Journal Articles" title_zh="期刊论文" items=journal_articles show_metrics=true %}
+{% include widgets/publication_list_section.html section_id="conference-papers" title_en="Conference Papers" title_zh="会议论文" items=conference_papers %}
+{% include widgets/publication_list_section.html section_id="book-chapters" title_en="Book Chapter" title_zh="书籍章节" items=book_chapters %}
+{% include widgets/publication_list_section.html section_id="preprints" title_en="Preprints" title_zh="预印本" items=preprints preprint=true %}

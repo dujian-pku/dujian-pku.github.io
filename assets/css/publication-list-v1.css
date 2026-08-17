@@ -1,0 +1,113 @@
+.publication-list-header {
+    margin: 1rem 0 2rem;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--line);
+}
+
+.publication-list-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.55rem;
+}
+
+.publication-list-header > p {
+    max-width: 58rem;
+    margin-bottom: 0.45rem;
+}
+
+.publication-source-line,
+.publication-type-note {
+    color: var(--muted);
+    font-size: 0.86rem;
+}
+
+.publication-section-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 1.2rem;
+    margin-top: 0.85rem;
+    font-size: 0.9rem;
+}
+
+.publication-section-nav a {
+    text-decoration: none;
+}
+
+.publication-list-section {
+    margin: 2rem 0 2.8rem;
+}
+
+.publication-list-section > h2 {
+    font-size: 1.45rem;
+    margin: 0 0 1.1rem;
+}
+
+.publication-year-group {
+    display: grid;
+    grid-template-columns: 5rem minmax(0, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.publication-year-group > h3 {
+    color: var(--pku-red);
+    font-size: 1.05rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.publication-compact-list {
+    border-top: 1px solid var(--line);
+}
+
+.publication-compact-item {
+    padding: 0.8rem 0 0.85rem;
+    border-bottom: 1px solid var(--line);
+}
+
+.publication-compact-item h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.45;
+    margin: 0 0 0.22rem;
+}
+
+.publication-compact-item p {
+    font-size: 0.86rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.publication-compact-authors {
+    color: #4f4946;
+}
+
+.publication-compact-venue {
+    color: var(--muted);
+}
+
+.publication-compact-venue strong {
+    color: var(--ink);
+}
+
+@media (max-width: 767.98px) {
+    .publication-list-header h1 {
+        font-size: 1.65rem;
+    }
+
+    .publication-section-nav {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 0.25rem;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .publication-year-group {
+        grid-template-columns: 1fr;
+        gap: 0.4rem;
+    }
+
+    .publication-year-group > h3 {
+        margin-top: 0.35rem;
+    }
+}

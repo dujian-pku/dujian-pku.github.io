@@ -1,0 +1,364 @@
+- year: 2026
+  type: journal-article
+  title: "Mapping the science–technology translational landscape in biomedicine"
+  authors: "Wenjing Zhao, Jian Du"
+  journal: "Nature Biotechnology"
+  doi: "10.1038/s41587-025-02962-9"
+  jif: "44.5"
+  jif_year: "2025"
+  jcr_quartile: "Q1"
+- year: 2026
+  type: journal-article
+  title: "Knowledge graph-augmented large language models for reconstructing life course risk pathways: a gestational diabetes mellitus-to-dementia case study"
+  authors: "Shuang Wang, Yang Zhang, Ying Gao, Xin He, Guanghui Deng, Jian Du"
+  journal: "Journal of the American Medical Informatics Association"
+  doi: "10.1093/jamia/ocaf219"
+  jif: "7.1"
+  jif_year: "2025"
+  jcr_quartile: "Q1"
+- year: 2026
+  type: journal-article
+  title: "Construction and Application of Directed Acyclic Graphs in Leading Medical Journals"
+  authors: "Guanghui Deng, Jian Du"
+  journal: "JAMA Network Open"
+  doi: "10.1001/jamanetworkopen.2025.53803"
+  jif: "9.7"
+  jif_year: "2025"
+  jcr_quartile: "Q1"
+- year: 2025
+  type: journal-article
+  title: "Evidence triangulator: using large language models to extract and synthesize causal evidence across study designs"
+  authors: "Xuanyu Shi, Wenjing Zhao, Ting Chen, Chao Yang, Jian Du"
+  journal: "Nature Communications"
+  doi: "10.1038/s41467-025-62783-x"
+  jif: "18.1"
+  jif_year: "2025"
+  jcr_quartile: "Q1"
+- year: 2025
+  type: journal-article
+  title: "Measuring the impact of the COVID-19 pandemic on the activeness, efficiency, and international collaboration of clinical trials"
+  authors: "Wenjing Zhao, Chi Yuan, Zixuan He, Jian Du"
+  journal: "Quantitative Science Studies"
+  doi: "10.1162/qss_a_00354"
+- year: 2025
+  type: journal-article
+  title: "Diet therapy for the management of obesity in children and adolescents: Overview of systematic reviews and meta-analysis of randomized controlled trials"
+  authors: "Li Li, Jian Du, Feng Sun, Zhi Li, Ting Chen, Xuanyu Shi"
+  journal: "Annals of the New York Academy of Sciences"
+  doi: "10.1111/nyas.15307"
+- year: 2025
+  type: journal-article
+  title: "Discrepancies in reported results between trial registries and journal articles for AI clinical research"
+  authors: "Zixuan He, Lan Yang, Xiaofan Li, Jian Du"
+  journal: "eClinicalMedicine"
+  doi: "10.1016/j.eclinm.2024.103066"
+  jif: "12.8"
+  jif_year: "2025"
+  jcr_quartile: "Q1"
+- year: 2025
+  type: journal-article
+  title: "Global rehabilitation research equality index across health conditions during 1990–2019: an alignment analysis between bibliographic and epidemiological data"
+  authors: "Xin Guo, Jiakang Huo, Wanwei Dai, Tong Wang, Han Xiao, Wenjing Zhao, Xuanyu Shi, Xueheng Wang, Yang Gao, Zhi Li, Rui Zhan, Wenli Xu, Jian Du, Erdan Dong"
+  journal: "Science Bulletin"
+  doi: "10.1016/j.scib.2025.02.013"
+- year: 2025
+  type: journal-article
+  title: "Behavior-change lifestyle interventions for the treatment of obesity in children and adolescents: A scoping review"
+  authors: "Li Li, Feng Sun, Jian Du, Zhi Li, Ting Chen, Xuanyu Shi"
+  journal: "Annals of the New York Academy of Sciences"
+  doi: "10.1111/nyas.15278"
+- year: 2024
+  type: journal-article
+  title: "Utilizing ChatGPT as a scientific reasoning engine to differentiate conflicting evidence and summarize challenges in controversial clinical questions"
+  authors: "Shiyao Xie, Wenjing Zhao, Guanghui Deng, Guohua He, Na He, Zhenhua Lu, Weihua Hu, Mingming Zhao, Jian Du"
+  journal: "Journal of the American Medical Informatics Association"
+  doi: "10.1093/jamia/ocae100"
+  jif: "7.1"
+  jif_year: "2025"
+  jcr_quartile: "Q1"
+- year: 2024
+  type: journal-article
+  title: "Scientific commentaries are dealing with uncertainty and complexity in science"
+  authors: "Shuang Wang, Xin He, Jian Du"
+  journal: "Information Processing & Management"
+  doi: "10.1016/j.ipm.2024.103707"
+- year: 2024
+  type: journal-article
+  title: "PubMed captures more fine-grained bibliographic data on scientific commentary than Web of Science: a comparative analysis"
+  authors: "Shuang Wang, Kai Zhang, Jian Du"
+  journal: "BMJ Health & Care Informatics"
+  doi: "10.1136/bmjhci-2024-101017"
+- year: 2024
+  type: journal-article
+  title: "Constructing a finer-grained representation of clinical trial results from ClinicalTrials.gov"
+  authors: "Xuanyu Shi, Jian Du"
+  journal: "Scientific Data"
+  doi: "10.1038/s41597-023-02869-7"
+  jif: "7.2"
+  jif_year: "2025"
+  jcr_quartile: "Q1"
+- year: 2024
+  type: journal-article
+  title: "A computable biomedical knowledge system: Toward rapidly building candidate-directed acyclic graphs"
+  authors: "Yongmei Bai, Xuanyu Shi, Jian Du"
+  journal: "Journal of Evidence-Based Medicine"
+  doi: "10.1111/jebm.12602"
+  jif: "4.7"
+  jif_year: "2025"
+  jcr_quartile: "Q1"
+- year: 2024
+  type: journal-article
+  title: "A Bibliographic Dataset of Health Artificial Intelligence Research"
+  authors: "Xuanyu Shi, Daoxin Yin, Yongmei Bai, Wenjing Zhao, Xin Guo, Huage Sun, Dongliang Cui, Jian Du"
+  journal: "Health Data Science"
+  doi: "10.34133/hds.0125"
+- year: 2023
+  type: journal-article
+  title: "Clinical practice guidelines for frailty vary in quality but guide primary health care: a systematic review"
+  authors: "Huaxin Si, Jiaqi Yu, Qinqin Liu, Yanyan Li, Yaru Jin, Yanhui Bian, Xiaoxia Qiao, Wenyu Wang, Lili Ji, Yan Wang, Jian Du, Cuili Wang"
+  journal: "Journal of Clinical Epidemiology"
+  doi: "10.1016/j.jclinepi.2023.06.019"
+- year: 2023
+  type: journal-article
+  title: "Rapid identification of chronic kidney disease in electronic health record database using computable phenotype combining a common data model"
+  authors: "Huai-Yu Wang, Jian Du, Yu Yang, Hongbo Lin, Beiyan Bao, Guohui Ding, Chao Yang, Guilan Kong, Luxia Zhang"
+  journal: "Chinese Medical Journal"
+  doi: "10.1097/CM9.0000000000002168"
+- year: 2023
+  type: journal-article
+  title: "Modeling the pulling and pushing power in medical research: Unmet health needs and unsettled scientific questions"
+  authors: "Jian Du, Wenjing Zhao, Xin Guo, Erdan Dong"
+  journal: "Chinese Science Bulletin"
+  doi: "10.1360/tb-2022-1310"
+- year: 2023
+  type: journal-article
+  title: "A comment-driven evidence appraisal approach to promoting research findings into practice when only uncertain evidence is available"
+  authors: "Shuang Wang, Halil Kilicoglu, Jian Du"
+  journal: "Health Research Policy and Systems"
+  doi: "10.1186/s12961-023-00969-9"
+- year: 2022
+  type: journal-article
+  title: "Measuring the impact of health research data in terms of data citations by scientific publications"
+  authors: "Yongmei Bai, Jian Du"
+  journal: "Scientometrics"
+  doi: "10.1007/s11192-022-04559-4"
+- year: 2022
+  type: journal-article
+  title: "Mapping the Research on Health Policy and Services in the Last Decade (2009–2018): A Bibliometric Analysis"
+  authors: "Linyan Zhao, Yang Zhao, Jian Du, Allissa Desloge, Zhiyong Hu, Gaofang Cao"
+  journal: "Frontiers in Public Health"
+  doi: "10.3389/fpubh.2022.773668"
+- year: 2022
+  type: journal-article
+  title: "Distinguishing transformative from incremental clinical evidence: A classifier of clinical research using textual features from abstracts and citing sentences"
+  authors: "Xuanyu Shi, Jian Du"
+  journal: "Journal of Informetrics"
+  doi: "10.1016/j.joi.2022.101262"
+- year: 2022
+  type: journal-article
+  title: "Extracting and Measuring Uncertain Biomedical Knowledge from Scientific Statements"
+  authors: "Xin Guo, Yuming Chen, Jian Du, Erdan Dong"
+  journal: "Journal of Data and Information Science"
+  doi: "10.2478/jdis-2022-0008"
+- year: 2022
+  type: journal-article
+  title: "Current State and Challenges of Rehabilitation Needs Among Elderly — China, 1990–2019"
+  authors: "Xin Guo, Jiakang Huo, Wanwei Dai, Zhongyan Wang, Jian Du, Xiaoying Zheng, Erdan Dong"
+  journal: "China CDC Weekly"
+  doi: "10.46234/ccdcw2022.180"
+- year: 2021
+  type: journal-article
+  title: "Towards medical knowmetrics: representing and computing medical knowledge using semantic predications as the knowledge unit and the uncertainty as the knowledge context"
+  authors: "Xiaoying Li, Suyuan Peng, Jian Du"
+  journal: "Scientometrics"
+  doi: "10.1007/s11192-021-03880-8"
+- year: 2021
+  type: journal-article
+  title: "Measuring the interactions between health demand, informatics supply, and technological applications in digital medical innovation for China: Content mapping and analysis"
+  authors: "Jian Du, Ting Chen, Luxia Zhang"
+  journal: "JMIR Medical Informatics"
+  doi: "10.2196/26393"
+- year: 2021
+  type: journal-article
+  title: "How pharmaceutical innovation evolves: The path from science to technological development to marketable drugs"
+  authors: "Xuefeng Wang, Shuo Zhang, Yuqin Liu, Jian Du, Heng Huang"
+  journal: "Technological Forecasting and Social Change"
+  doi: "10.1016/j.techfore.2021.120698"
+- year: 2021
+  type: journal-article
+  title: "Age- and Gender-Specific Prevalence of Frailty and Its Outcomes in the Longevous Population: The Chinese Longitudinal Healthy Longevity Study"
+  authors: "Huai-Yu Wang, Xiaozhen Lv, Jian Du, Guilan Kong, Luxia Zhang"
+  journal: "Frontiers in Medicine"
+  doi: "10.3389/fmed.2021.719806"
+- year: 2021
+  type: journal-article
+  title: "A deep learning approach for identifying biomedical breakthrough discoveries using context analysis"
+  authors: "Xue Wang, Xuemei Yang, Jian Du, Xuwen Wang, Jiao Li, Xiaoli Tang"
+  journal: "Scientometrics"
+  doi: "10.1007/s11192-021-04003-z"
+- year: 2021
+  type: journal-article
+  title: "Influence of doctors' perception on the diagnostic status of chronic kidney disease: results from 976,409 individuals with electronic health records in China"
+  authors: "Huai-Yu Wang, Guohui Ding, Hongbo Lin, Xiaoyu Sun, Chao Yang, Suyuan Peng, Jinwei Wang, Jian Du, Yu Zhao, Zhengyue Chen, Beiyan Bao, Guilan Kong, Luxia Zhang"
+  journal: "Clinical Kidney Journal"
+  doi: "10.1093/ckj/sfab089"
+- year: 2021
+  type: journal-article
+  title: "On the Concepts and Approaches of Computable Knowledge in Biomedical and Health Sciences"
+  authors: "Jian Du, Guilan Kong, Pengfei Li, Yongmei Bai, Luxia Zhang"
+  journal: "Journal of the China Society for Scientific and Technical Information"
+- year: 2020
+  type: journal-article
+  title: "The impact of J. D. Bernal's thoughts in the science of science upon China: Implications for today's quantitative studies of science"
+  authors: "Yong Zhao, Jian Du, Yishan Wu"
+  journal: "Quantitative Science Studies"
+  doi: "10.1162/qss_a_00064"
+- year: 2020
+  type: journal-article
+  title: "Paper-patent citation linkages as early signs for predicting delayed recognized knowledge: Macro and micro evidence"
+  authors: "Jian Du, Peixin Li, Robin Haunschild, Yinan Sun, Xiaoli Tang"
+  journal: "Journal of Informetrics"
+  doi: "10.1016/j.joi.2020.101017"
+- year: 2020
+  type: journal-article
+  title: "Measuring Uncertainty of Medical Knowledge: A Literature Review"
+  authors: "Jian Du"
+  journal: "Data Analysis and Knowledge Discovery"
+  doi: "10.11925/infotech.2096-3467.2020.0222"
+- year: 2020
+  type: journal-article
+  title: "A knowledge graph of combined drug therapies using semantic predications from biomedical literature: Algorithm development"
+  authors: "Jian Du, Xiaoying Li"
+  journal: "JMIR Medical Informatics"
+  doi: "10.2196/18323"
+- year: 2019
+  type: journal-article
+  title: "Measuring the knowledge translation and convergence in pharmaceutical innovation by funding-science-technology-innovation linkages analysis"
+  authors: "Jian Du, Peixin Li, Qianying Guo, Xiaoli Tang"
+  journal: "Journal of Informetrics"
+  doi: "10.1016/j.joi.2018.12.004"
+- year: 2019
+  type: journal-article
+  title: "Conversational Interfaces for Health: Bibliometric Analysis of Grants, Publications, and Patents"
+  authors: "Zhaopeng Xing, Fei Yu, Jian Du, Jennifer S. Walker, Claire B. Paulson, Nandita S. Mani, Lixin Song"
+  journal: "Journal of Medical Internet Research"
+  doi: "10.2196/14672"
+- year: 2019
+  type: journal-article
+  title: "Characterizing and detecting the early scientometric signs of potential transformative research"
+  authors: "Jian Du, Yinan Sun, Yang Zhang, Xiaoli Tang"
+  journal: "Bulletin of National Natural Science Foundation of China"
+- year: 2018
+  type: journal-article
+  title: "A parameter-free index for identifying under-cited sleeping beauties in science"
+  authors: "Jian Du, Yishan Wu"
+  journal: "Scientometrics"
+  doi: "10.1007/s11192-018-2780-0"
+- year: 2018
+  type: journal-article
+  title: "Sleeping beauties in science: Key characteristics, early identification clues and science policy implications"
+  authors: "Jian Du, Yishan Wu"
+  journal: "Studies in Science of Science"
+- year: 2017
+  type: journal-article
+  title: "The science, technology and innovation policy studies in China: A scientometric analysis"
+  authors: "Jian Du, Yishan Wu"
+  journal: "Studies in Science of Science"
+- year: 2016
+  type: journal-article
+  title: "The performance of China's biomedical innovation: a scientometric analysis"
+  authors: "Xiaoli Tang, Jian Du"
+  journal: "Science China Life Sciences"
+  doi: "10.1007/s11427-016-5078-6"
+- year: 2016
+  type: journal-article
+  title: "The effects of research level and article type on the differences between citation metrics and F1000 recommendations"
+  authors: "Jian Du, Xiaoli Tang, Yishan Wu"
+  journal: "Journal of the Association for Information Science and Technology"
+  doi: "10.1002/asi.23548"
+- year: 2016
+  type: journal-article
+  title: "A bibliometric framework for identifying “Princes” who wake up the “sleeping beauty” in challenge-type scientific discoveries"
+  authors: "Jian Du, Yishan Wu"
+  journal: "Journal of Data and Information Science"
+  doi: "10.20309/jdis.201605"
+- year: 2016
+  type: journal-article
+  title: "Precision medicine: concept origins and evolution, research areas and policy recommendations for China"
+  authors: "Jian Du, Xiaoli Tang"
+  journal: "Bulletin of National Natural Science Foundation of China"
+- year: 2014
+  type: journal-article
+  title: "Natural products against cancer: A comprehensive bibliometric study of the research projects, publications, patents and drugs"
+  authors: "Jian Du, Xiaoli Tang"
+  journal: "Journal of Cancer Research and Therapeutics"
+  doi: "10.4103/0973-1482.139750"
+- year: 2013
+  type: journal-article
+  title: "Perceptions of author order versus contribution among researchers with different professional ranks and the potential of harmonic counts for encouraging ethical co-authorship practices"
+  authors: "Jian Du, Xiaoli Tang"
+  journal: "Scientometrics"
+  doi: "10.1007/s11192-012-0905-4"
+- year: 2013
+  type: journal-article
+  title: "Accelerating the transition among T1, T2, and T3 phases of translational medicine through citation networks"
+  authors: "Jian Du, Xiaoli Tang, Yanwu Zhang, Bin Zhang, Zhuming Jiang"
+  journal: "Chinese Journal of Clinical Nutrition"
+  doi: "10.3760/cma.j.issn.1674-635X.2013.02.006"
+
+- year: 2024
+  type: conference-paper
+  title: "Identifying and Classifying Scientific Unknowns in Clinical Literature"
+  authors: "Wenjing Zhao, Jintao Ma, Jian Du"
+  journal: "Proceedings of the Eighteenth International ISKO Conference"
+- year: 2024
+  type: conference-paper
+  title: "Constructing a Map of Contradictory Evidences Based on Semantic Triples: A Case Study of Cardiovascular Diseases"
+  authors: "Wenjing Zhao, Nan Zhang, Jian Du"
+  journal: "Proceedings of the Eighteenth International ISKO Conference"
+- year: 2024
+  type: conference-paper
+  title: "Extraction and Co-Occurrence Analysis of Serious Adverse Events in Studies on ClinicalTrials.gov"
+  authors: "Zitao Liang, Xuanyu Shi, Jian Du"
+  journal: "Proceedings of the Eighteenth International ISKO Conference"
+- year: 2023
+  type: conference-paper
+  title: "An automated approach to extracting positive and negative clinical research results"
+  authors: "Xuanyu Shi, Shiyao Xie, Wenjia Wang, Ting Chen, Jian Du"
+  journal: "Proceedings of the 19th International Conference on Scientometrics and Informetrics"
+  doi: "10.5281/zenodo.8305956"
+- year: 2023
+  type: conference-paper
+  title: "Has COVID-19 Crowded Out Medical Research Resources from Non-COVID-19 Diseases? Observations From Clinical Trials"
+  authors: "Wenjing Zhao, Jian Du"
+  journal: "Proceedings of the 19th International Conference on Scientometrics and Informetrics"
+  doi: "10.5281/zenodo.8280486"
+- year: 2022
+  type: conference-paper
+  title: "Discovering causal paths to diabetic nephropathy by combining computable biomedical knowledge with graph mining algorithms"
+  authors: "Shuang Wang, Huai-Yu Wang, Jian Du"
+  journal: "AMIA Annual Symposium Proceedings"
+- year: 2021
+  type: conference-paper
+  title: "A PICO-based Knowledge Graph for Representing Clinical Evidence"
+  authors: "Yongmei Bai, Huage Sun, Jian Du"
+  journal: "EEKE 2021 at the ACM/IEEE Joint Conference on Digital Libraries"
+
+- year: 2020
+  type: book-chapter
+  title: "Origin and Impact: A Study of the Intellectual Transfer of Professor Henk F. Moed's Works by Using Reference Publication Year Spectroscopy (RPYS)"
+  authors: "Yong Zhao, Jiayan Han, Jian Du, Yishan Wu"
+  journal: "Evaluative Informetrics: The Art of Metrics-Based Research Assessment"
+
+- year: 2026
+  type: preprint
+  title: "EpiKG2DAG: a Framework for Automated DAG Construction from Biomedical Text"
+  authors: "Guanghui Deng, Jian Du"
+  journal: "medRxiv"
+  doi: "10.64898/2026.08.09.26360023"
+- year: 2026
+  type: preprint
+  title: "Bias-domain triangulation of non-convergent observational evidence in mental health research"
+  authors: "Xuanyu Shi, Guanghui Deng, Jian Du"
+  journal: "medRxiv"
+  doi: "10.64898/2026.07.07.26357342"
