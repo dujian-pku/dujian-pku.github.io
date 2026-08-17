@@ -13,11 +13,11 @@
                                 <li class="media mb-1">
                                     {% if item.logo %}<img src="{{ item.logo | relative_url }}" alt="" style="width: 18px;" class="mr-1 mt-1">{% else %}<span class="timeline-dot" aria-hidden="true"></span>{% endif %}
                                     <div class="media-body">
-                                        <div>{{ item.name }}</div>
-                                        <div class="small">{{ item.dept }}</div>
-                                        <div class="small d-flex">
+                                        <div class="experience-primary">{{ item.name }}</div>
+                                        {% if item.dept %}<div class="experience-secondary">{{ item.dept }}</div>{% endif %}
+                                        <div class="experience-secondary d-flex">
                                             <div>{{ item.position }}</div>
-                                            <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
+                                            <div class="experience-date mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
                                         </div>
                                     </div>
                                 </li>
@@ -36,11 +36,11 @@
                                 <li class="media mb-1">
                                     {% if item.logo %}<img src="{{ item.logo | relative_url }}" alt="" style="width: 18px;" class="mr-1 mt-1">{% else %}<span class="timeline-dot" aria-hidden="true"></span>{% endif %}
                                     <div class="media-body">
-                                        <div>{{ item.name }}</div>
-                                        <div class="small">{{ item.dept }}</div>
-                                        <div class="small d-flex">
+                                        <div class="experience-primary">{{ item.name }}</div>
+                                        {% if item.dept %}<div class="experience-secondary">{{ item.dept }}</div>{% endif %}
+                                        <div class="experience-secondary d-flex">
                                             <div>{{ item.position }}</div>
-                                            <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
+                                            <div class="experience-date mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
                                         </div>
                                     </div>
                                 </li>
@@ -54,12 +54,12 @@
                     <div id="honors" class="col-lg-6 section-anchor">
                         <div class="mx-2 my-1">
                             <h6 id="honors-heading">{% if page.locale == 'zh' %}荣誉与奖励 <span class="section-title-en">Honors</span>{% else %}Honors{% endif %}</h6>
-                            <ul class="list small pl-3 mb-1">
+                            <ul class="list pl-3 mb-1">
                                 {% for item in profile.awards %}
                                 <li>
                                     <div class="d-flex">
-                                        <div>{{ item.name }}</div>
-                                        <div class="ml-auto mt-auto no-break"><em>{{ item.date }}</em></div>
+                                        <div class="experience-primary">{{ item.name }}</div>
+                                        <div class="experience-date ml-auto mt-auto no-break"><em>{{ item.date }}</em></div>
                                     </div>
                                 </li>
                                 {% endfor %}

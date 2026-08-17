@@ -237,6 +237,23 @@ button:focus-visible {
     font-size: var(--font-size-subtitle);
 }
 
+.experience-primary {
+    font-size: var(--font-size-body);
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+.experience-secondary,
+.experience-date {
+    color: var(--muted);
+    font-size: var(--font-size-meta);
+    line-height: 1.5;
+}
+
+.experience-date {
+    padding-left: 0.75rem;
+}
+
 .research-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
