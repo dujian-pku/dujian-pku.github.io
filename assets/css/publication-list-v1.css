@@ -14,7 +14,7 @@
     margin-bottom: 0.45rem;
 }
 
-.publication-source-line,
+.publication-counts,
 .publication-type-note {
     color: var(--muted);
     font-size: 0.86rem;
