@@ -5,12 +5,12 @@ affiliation_short: "National Institute of Health Data Science at Peking Universi
 role_line: "Tenured Associate Professor · Researcher · PhD Supervisor"
 lab_line: "Principal Investigator, Computable Biomedical Knowledge Lab"
 affiliation_lines:
-- National Institute of Health Data Science
+- National Institute of
+- Health Data Science
 - Peking University
-roles:
+role_lines:
 - Tenured Associate Professor
-- Researcher
-- PhD Supervisor
+- Researcher · PhD Supervisor
 lab_lines:
 - Principal Investigator
 - Computable Biomedical

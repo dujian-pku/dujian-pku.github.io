@@ -7,17 +7,17 @@
                     <div class="col">
                         {% if profile.portrait_url %}
                         <!-- When the screen is wider than md, float the portrait on the right -->
-                        <div class="profile-portrait-wrap d-none d-md-flex">
+                        <div class="profile-portrait-wrap d-none d-md-flex justify-content-center">
                             <img 
                                 src="{{ profile.portrait_url | relative_url }}"
-                                class="figure-img img-fluid portrait-image"
+                                class="figure-img img-fluid portrait-image rounded-circle"
                                 data-toggle="tooltip"
                                 data-placement="top"
                                 title="{{ profile.portrait_caption }}"
                                 alt="{{ profile.portrait_caption }}">
                         </div>
                         <div class="mb-3 d-md-none text-center">
-                            <img src="{{ profile.portrait_url | relative_url }}" class="portrait-image portrait-mobile" alt="{{ profile.portrait_caption }}">
+                            <img src="{{ profile.portrait_url | relative_url }}" class="portrait-image portrait-mobile rounded-circle" alt="{{ profile.portrait_caption }}">
                         </div>
                         {% endif %}
                     </div>
@@ -37,21 +37,21 @@
                     <div class="col text-center profile-identity">
                         <div class="profile-affiliation">
                             {% if profile.affiliation_lines %}
-                                {% for line in profile.affiliation_lines %}<span>{{ line }}</span>{% endfor %}
+                                {% for line in profile.affiliation_lines %}<span>{{ line }}</span>{% unless forloop.last %}<br>{% endunless %}{% endfor %}
                             {% else %}
                                 <span>{{ profile.affiliation_short }}</span>
                             {% endif %}
                         </div>
-                        <div class="profile-role-list">
-                            {% if profile.roles %}
-                                {% for role in profile.roles %}<span>{{ role }}</span>{% endfor %}
+                        <div class="profile-role-lines">
+                            {% if profile.role_lines %}
+                                {% for line in profile.role_lines %}<span>{{ line }}</span>{% unless forloop.last %}<br>{% endunless %}{% endfor %}
                             {% else %}
                                 <span>{{ profile.role_line }}</span>
                             {% endif %}
                         </div>
                         <div class="profile-lab">
                             {% if profile.lab_lines %}
-                                {% for line in profile.lab_lines %}<span>{{ line }}</span>{% endfor %}
+                                {% for line in profile.lab_lines %}<span>{{ line }}</span>{% unless forloop.last %}<br>{% endunless %}{% endfor %}
                             {% else %}
                                 <span>{{ profile.lab_line }}</span>
                             {% endif %}
@@ -68,7 +68,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col profile-social-links">
+                    <div class="col text-center d-flex justify-content-center align-items-center profile-social-links">
                         {% if profile.gscholar %}
                         {%- if profile.gscholar contains 'scholar.google' -%}
                         {%- assign gscholar_url = profile.gscholar -%}
@@ -105,19 +105,19 @@
                         {% endif %}
 
                         {% if profile.orcid %}
-                        <a class="no-break" target="_blank" rel="noopener noreferrer" href="https://orcid.org/{{ profile.orcid }}" aria-label="ORCID" title="ORCID">
+                        <a class="no-break mx-2" target="_blank" rel="noopener noreferrer" href="https://orcid.org/{{ profile.orcid }}" aria-label="ORCID" title="ORCID">
                             <i class="fab fa-orcid" aria-hidden="true"></i>
                         </a>
                         {% endif %}
 
                         {% if profile.researchgate %}
-                        <a class="no-break" target="_blank" rel="noopener noreferrer" href="{{ profile.researchgate }}" aria-label="ResearchGate" title="ResearchGate">
+                        <a class="no-break mx-2" target="_blank" rel="noopener noreferrer" href="{{ profile.researchgate }}" aria-label="ResearchGate" title="ResearchGate">
                             <i class="fab fa-researchgate" aria-hidden="true"></i>
                         </a>
                         {% endif %}
 
                         {% if profile.institutional_profile %}
-                        <a class="no-break" target="_blank" rel="noopener noreferrer" href="{{ profile.institutional_profile }}" aria-label="{% if page.locale == 'zh' %}北京大学个人主页{% else %}Peking University profile{% endif %}" title="{% if page.locale == 'zh' %}北京大学个人主页{% else %}Peking University profile{% endif %}">
+                        <a class="no-break mx-2" target="_blank" rel="noopener noreferrer" href="{{ profile.institutional_profile }}" aria-label="{% if page.locale == 'zh' %}北京大学个人主页{% else %}Peking University profile{% endif %}" title="{% if page.locale == 'zh' %}北京大学个人主页{% else %}Peking University profile{% endif %}">
                             <i class="fas fa-building-columns" aria-hidden="true"></i>
                         </a>
                         {% endif %}

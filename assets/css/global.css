@@ -150,22 +150,13 @@ button:focus-visible {
     display: block;
 }
 
-.profile-role-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.08rem 0.35rem;
+.profile-role-lines {
     color: #48423f;
 }
 
-.profile-role-list span {
+.profile-role-lines span {
+    display: inline-block;
     white-space: nowrap;
-}
-
-.profile-role-list span:not(:last-child)::after {
-    color: var(--pku-red);
-    content: "·";
-    margin-left: 0.35rem;
 }
 
 .profile-lab {
