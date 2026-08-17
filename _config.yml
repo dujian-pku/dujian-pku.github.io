@@ -1,0 +1,49 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: "杜建 | 北京大学"
+description: "杜建，北京大学健康医疗大数据国家研究院长聘副教授、研究员、博士生导师。研究方向包括健康医疗大数据、医学知识图谱、生物医学自然语言处理与智能循证决策。"
+url: "https://dujian-pku.github.io"
+baseurl: ""
+lang: "zh-CN"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-email-protect
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - vendor
+  - .bundle
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - blog.html
+  - showcase.html
+  - index_layout2.html
+  - _posts
+  - _showcase
+  - assets/css/blog.css
+  - assets/js/blog.js
+
+timezone: Asia/Shanghai
+
+collections:
+  - publications
+  - news

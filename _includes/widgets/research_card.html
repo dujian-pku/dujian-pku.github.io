@@ -1,0 +1,21 @@
+<section class="row mt-3" aria-labelledby="research-heading">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body p-4">
+                <h3 id="research-heading" class="card-section-heading">研究方向 <span class="section-title-en">Research</span></h3>
+                <div class="research-grid">
+                    {% for item in site.data.profile.research_areas %}
+                    <article class="research-item">
+                        <div class="research-index">0{{ forloop.index }}</div>
+                        <div>
+                            <h4>{{ item.title }}</h4>
+                            <div class="research-en">{{ item.en }}</div>
+                            <p>{{ item.description }}</p>
+                        </div>
+                    </article>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

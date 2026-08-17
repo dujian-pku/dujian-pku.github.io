@@ -1,0 +1,106 @@
+primary_name: "杜建"
+secondary_name: "Jian Du, PhD"
+navbar_name: "杜建"
+
+positions:
+- name: 北京大学健康医疗大数据国家研究院
+- name: 长聘副教授、研究员、博士生导师
+- name: 可计算医学知识课题组 PI
+
+email: "dujian@bjmu.edu.cn"
+orcid: 0000-0001-8436-778X
+institutional_profile: "https://dshm.bjmu.edu.cn/info/1251/1534.htm"
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    杜建，南京大学管理学博士（信息资源管理），现任北京大学健康医疗大数据国家研究院长聘副教授、研究员、博士生导师，北京大学可计算医学知识课题组负责人。2019年11月加入北京大学医学部，此前任职于北京协和医学院医学信息研究所。
+  </p>
+  <p>
+    长期从事医学健康与数据科学交叉研究，关注健康医疗大数据、医学知识图谱、生物医学自然语言处理、因果图与智能循证决策。主持国家重点研发计划青年科学家项目、国家自然科学基金面上项目等，在 <em>Nature Biotechnology</em>、<em>Nature Communications</em>、<em>JAMA Network Open</em> 和 <em>JAMIA</em> 等期刊发表研究成果。
+  </p>
+  <p class="profile-source">
+    资料来源：<a href="https://dshm.bjmu.edu.cn/info/1251/1534.htm" target="_blank" rel="noopener noreferrer">北京大学官方主页</a> · <a href="https://orcid.org/0000-0001-8436-778X" target="_blank" rel="noopener noreferrer">ORCID</a>
+  </p>
+
+portrait_url: /assets/images/photos/jian-du.jpg
+portrait_caption: "杜建"
+
+education:
+- name: 南京大学
+  position: 管理学博士（信息资源管理）
+  date: "2017"
+- name: 华中科技大学
+  position: 医学信息学硕士
+  date: "2010"
+- name: 滨州医学院
+  position: 医学信息学学士
+  date: "2008"
+
+experience:
+- name: 北京大学健康医疗大数据国家研究院
+  position: 长聘副教授、研究员、博士生导师
+  date: 2019.11–至今
+- name: 北京协和医学院医学信息研究所
+  position: 助理研究员、副研究员
+  date: 2010.08–2019.10
+
+awards:
+- name: 中国知网年度 Top 1% 高被引学者
+  date: "2024"
+- name: 中国科学技术情报学会青年情报科学家奖
+  date: "2017"
+- name: 中国科协青年人才托举工程
+  date: "入选"
+
+research_areas:
+- title: 可计算医学知识
+  en: Computable Biomedical Knowledge
+  description: 将文献中的医学知识转化为可检索、可计算和可执行的知识对象，支持知识复用与决策。
+- title: 医学知识图谱与自然语言处理
+  en: Medical Knowledge Graphs & NLP
+  description: 从生物医学文献和临床研究资源中抽取实体、关系与证据语境，构建可溯源知识网络。
+- title: 因果图与证据三角测量
+  en: Causal DAGs & Evidence Triangulation
+  description: 利用有向无环图组织因果假设，并综合不同研究设计的证据方向、偏倚结构与一致性。
+- title: 医学科技大数据分析
+  en: Biomedical Science & Technology Analytics
+  description: 连接论文、专利、临床试验与疾病负担数据，分析医学知识生产、转化与应用路径。
+
+platforms:
+- name: CBK System
+  title: 可计算医学知识平台
+  url: https://cbk.bjmu.edu.cn/
+  description: 面向 SemMedDB 语义三元组的检索、证据回溯、机制路径发现与候选因果图构建。
+- name: HNLP System
+  title: 医学自然语言处理系统
+  url: https://hnlp.bjmu.edu.cn/
+  description: 面向医学文本的自然语言处理与知识抽取工具平台。
+- name: KG2DAG
+  title: 知识图谱辅助因果图构建
+  url: https://dag.bjmu.edu.cn/
+  description: 基于知识图谱发现暴露与结局之间的候选混杂、中介及对撞变量。
+
+funding:
+- name: Using Large Language Models and Biomedical Ontologies for Mobilizing the Construction and Applications of Directed Acyclic Graphs in Observational Health Data Research
+  agency: Michigan Medicine–PKUHSC Joint Institute Award · Co-PI
+  number: BMU2026JIUM001
+  date: 2026–2027
+- name: 基于知识图谱的特许药械不良事件因果推断方法研究
+  agency: 海南省重点研发项目 · 课题负责人
+  number: ""
+  date: 2026–2027
+- name: 从生物医学和流行病学研究数据中自动生成因果图的系列工具研发
+  agency: 国家重点研发计划青年科学家项目
+  number: 2022YFF0712000
+  date: 2022–2025
+- name: 不确定性科学知识表示与计量的理论、方法与应用研究：以医学为例
+  agency: 国家自然科学基金面上项目
+  number: "72074006"
+  date: 2021–2024
+
+teaching:
+- name: 书目数据库知识发现
+  date: 2020–2025 春季学期
+- name: 面向网络医学的生物医学文献挖掘
+  date: 2024–2025 春季学期

@@ -1,0 +1,8 @@
+pages:
+- name: 首页
+  url: /
+- name: 研究成果
+  url: /publications
+- name: ORCID
+  url: https://orcid.org/0000-0001-8436-778X
+  external: true
