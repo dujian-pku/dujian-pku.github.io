@@ -4,9 +4,21 @@ navbar_name: "Jian Du"
 affiliation_short: "National Institute of Health Data Science at Peking University"
 role_line: "Tenured Associate Professor · Researcher · PhD Supervisor"
 lab_line: "Principal Investigator, Computable Biomedical Knowledge Lab"
+affiliation_lines:
+- National Institute of Health Data Science
+- Peking University
+roles:
+- Tenured Associate Professor
+- Researcher
+- PhD Supervisor
+lab_lines:
+- Principal Investigator
+- Computable Biomedical
+- Knowledge Lab
 
 email: "dujian@bjmu.edu.cn"
 orcid: 0000-0001-8436-778X
+researchgate: "https://www.researchgate.net/profile/Jian-Du-3"
 institutional_profile: "https://www.nihds.pku.edu.cn/en/info/1027/1024.htm"
 
 short_bio: >-
@@ -17,7 +29,7 @@ short_bio: >-
     His research examines how biomedical knowledge can be represented, computed, and used in evidence-informed decisions. Current work spans biomedical knowledge graphs, natural language processing, causal diagrams, evidence triangulation, and the analysis of science-to-technology translation.
   </p>
   <p class="profile-source">
-    Sources: <a href="https://www.nihds.pku.edu.cn/en/info/1027/1024.htm" target="_blank" rel="noopener noreferrer">Peking University profile</a> · <a href="https://orcid.org/0000-0001-8436-778X" target="_blank" rel="noopener noreferrer">ORCID</a>
+    <a href="https://www.nihds.pku.edu.cn/en/info/1027/1024.htm" target="_blank" rel="noopener noreferrer">Peking University profile</a> · <a href="https://orcid.org/0000-0001-8436-778X" target="_blank" rel="noopener noreferrer">ORCID</a>
   </p>
 
 portrait_url: /assets/images/photos/jian-du.jpg

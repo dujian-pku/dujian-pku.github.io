@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    font-family: "Times New Roman", "STFangsong", "FangSong", "仿宋", serif;
+    font-family: Arial, "Microsoft YaHei", "微软雅黑", "PingFang SC", sans-serif;
     font-size: 17px;
     font-weight: 400;
     line-height: 1.68;
@@ -27,7 +27,7 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: "Times New Roman", "STFangsong", "FangSong", "仿宋", serif;
+    font-family: Arial, "Microsoft YaHei", "微软雅黑", "PingFang SC", sans-serif;
     font-weight: 700;
     letter-spacing: 0.01em;
 }
@@ -110,15 +110,22 @@ button:focus-visible {
     border-left: 1px solid var(--line);
 }
 
+.profile-portrait-wrap {
+    justify-content: center;
+    margin-bottom: 0.7rem;
+}
+
 .portrait-image {
-    width: 100%;
+    width: min(72%, 168px);
     aspect-ratio: 1 / 1;
     object-fit: cover;
+    object-position: 50% 38%;
+    border-radius: 50%;
     border: 1px solid var(--line);
 }
 
 .portrait-mobile {
-    width: min(62vw, 250px);
+    width: min(44vw, 176px);
 }
 
 .profile-name-en {
@@ -126,6 +133,68 @@ button:focus-visible {
     font-size: 0.92rem;
     margin-top: -0.35rem;
     margin-bottom: 0.55rem;
+}
+
+.profile-identity {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.profile-affiliation {
+    font-weight: 700;
+    margin-bottom: 0.48rem;
+}
+
+.profile-affiliation span,
+.profile-lab span {
+    display: block;
+}
+
+.profile-role-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.08rem 0.35rem;
+    color: #48423f;
+}
+
+.profile-role-list span {
+    white-space: nowrap;
+}
+
+.profile-role-list span:not(:last-child)::after {
+    color: var(--pku-red);
+    content: "·";
+    margin-left: 0.35rem;
+}
+
+.profile-lab {
+    color: var(--muted);
+    font-size: 0.88rem;
+    line-height: 1.34;
+    margin-top: 0.42rem;
+}
+
+.profile-contact {
+    font-size: 0.92rem;
+    margin-top: 0.65rem;
+}
+
+.profile-social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.78rem;
+    font-size: 1.42rem;
+    line-height: 1;
+    margin-top: 0.75rem;
+}
+
+.profile-social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .text-profile-position {
@@ -316,7 +385,7 @@ button:focus-visible {
 }
 
 .email-text {
-    font-family: "Times New Roman", serif;
+    font-family: Arial, sans-serif;
 }
 
 .inline-badge {
