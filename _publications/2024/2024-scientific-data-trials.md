@@ -3,6 +3,9 @@ title: "Constructing a finer-grained representation of clinical trial results fr
 date: 2024-01-06 00:01:00 +0800
 selected: true
 pub: "Scientific Data"
+jif: "7.2"
+jif_year: "2025"
+jcr_quartile: "Q1"
 pub_date: "2024; 11:41"
 abstract: "构建面向试验组的临床试验结果表示，将疗效、安全性、比较组与结局信息组织为可复用知识图谱。"
 abstract_en: "Introduces an arm-level representation of clinical trial results that organizes efficacy, safety, comparator, and outcome information as a reusable knowledge graph."

@@ -1,4 +1,7 @@
 {% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+<p class="publication-metrics-note">
+    {% if page.locale == 'zh' %}期刊指标采用 2025 Journal Citation Reports（2026 年发布）。{% else %}Journal metrics are from the 2025 Journal Citation Reports, released in 2026.{% endif %}
+</p>
 <div class="row">
     <div class="col-12 col-lg-10">
         {% for year in pubs_by_year %}

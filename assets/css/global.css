@@ -266,14 +266,31 @@ button:focus-visible {
 }
 
 .academic-meta {
-    color: var(--muted);
-    font-size: 0.8rem;
-    margin-bottom: 0.18rem;
+    color: #4f4742;
+    font-size: 0.93rem;
+    font-weight: 700;
+    line-height: 1.45;
+    margin-bottom: 0.32rem;
 }
 
 .publication-entry h5 {
     font-size: 1.03rem;
     line-height: 1.42;
+}
+
+.publication-venue-line {
+    line-height: 1.55;
+}
+
+.publication-venue-metrics {
+    color: #2f2a27;
+    font-weight: 700;
+}
+
+.publication-metrics-note {
+    color: var(--muted);
+    font-size: 0.86rem;
+    margin: 1.2rem 0 0.1rem;
 }
 
 .publication-entry .border-gray,

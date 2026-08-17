@@ -1,5 +1,8 @@
 {% assign item = include.item %}
 {% if page.locale == 'zh' and item.links_zh %}{% assign publication_links = item.links_zh %}{% else %}{% assign publication_links = item.links %}{% endif %}
+{% capture publication_venue %}
+<strong class="publication-venue-metrics"><i>{{ item.pub }}</i>{% if item.jif %} · {% if page.locale == 'zh' %}影响因子 {{ item.jif }}（{{ item.jif_year }}）{% else %}JIF {{ item.jif }} ({{ item.jif_year }}){% endif %} · JCR {{ item.jcr_quartile }}{% endif %}</strong>
+{% endcapture %}
 <div class="d-none d-md-block publication-entry">
     <div class="row no-gutters {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray">
         {% if item.cover %}<div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
@@ -10,7 +13,7 @@
         <div class="{% if item.cover %}col-md-9 col-xl-10 pl-md-0{% else %}col-12{% endif %} p-3">
             <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
             <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
-            <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
+            <p class="mt-0 mb-0 small publication-venue-line">{{ item.pub_pre }}{{ publication_venue | strip }}{{ item.pub_post }}{% if item.pub_date %} · {{ item.pub_date }}{% endif %} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
             <p class="mt-0 mb-0 small text-muted">{% if page.locale == 'zh' %}{{ item.abstract }}{% else %}{{ item.abstract_en }}{% endif %}</p>
             
             <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
@@ -34,7 +37,7 @@
             <div>
                 <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
                 <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
-                <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
+                <p class="mt-0 mb-0 small publication-venue-line">{{ item.pub_pre }}{{ publication_venue | strip }}{{ item.pub_post }}{% if item.pub_date %} · {{ item.pub_date }}{% endif %} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
                 <p class="mt-0 mb-0 small text-muted">{% if page.locale == 'zh' %}{{ item.abstract }}{% else %}{{ item.abstract_en }}{% endif %}</p>
                 
                 <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">

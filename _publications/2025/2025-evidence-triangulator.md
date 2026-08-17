@@ -3,6 +3,9 @@ title: "Evidence triangulator: using large language models to extract and synthe
 date: 2025-08-09 00:01:00 +0800
 selected: true
 pub: "Nature Communications"
+jif: "18.1"
+jif_year: "2025"
+jcr_quartile: "Q1"
 pub_date: "2025; 16:7355"
 abstract: "利用大语言模型抽取暴露、结局、效应方向与统计显著性，并跨研究设计计算证据收敛程度。"
 abstract_en: "Uses large language models to extract exposures, outcomes, effect directions, and statistical significance, then measures evidence convergence across study designs."
