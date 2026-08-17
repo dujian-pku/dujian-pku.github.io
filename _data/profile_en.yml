@@ -113,9 +113,11 @@ services:
 - title: Standards
   items:
   - name: Guidance for Constructing Directed Acyclic Graphs in Observational Studies (T/CAS 1152—2025)
-    role: Drafter
+    role: Led the development
 - title: Professional Societies
   items:
+  - name: Professional Committee on Artificial Intelligence, Chinese Society of Microcirculation
+    role: Vice Chair
   - name: Hospital Library and Information Specialized Committee, Chinese Hospital Association
     role: Standing Committee Member and Secretary-General
   - name: Health Data Science Specialized Committee, Chinese Hospital Association
