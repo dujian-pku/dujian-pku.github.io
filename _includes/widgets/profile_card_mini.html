@@ -62,7 +62,7 @@
                 <div class="row profile-contact">
                     <div class="col text-center">
                         <a class="email-text" href="mailto:{{ profile.email | encode_email }}">
-                            {{ profile.email | replace: "@", "(at)" }}
+                            {{ profile.email }}
                         </a>
                     </div>
                 </div>

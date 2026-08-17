@@ -34,7 +34,6 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item{% if page.navbar_title == home_label %} active{% endif %}"><a class="nav-link" href="{{ home_url | relative_url }}">{{ home_label }}</a></li>
                 <li class="nav-item{% if page.navbar_title == publications_label %} active{% endif %}"><a class="nav-link" href="{{ publications_url | relative_url }}">{{ publications_label }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://orcid.org/0000-0001-8436-778X" target="_blank" rel="noopener noreferrer">ORCID <span aria-hidden="true">↗</span></a></li>
                 <li class="nav-item"><a class="nav-link language-switch" href="{{ language_url | relative_url }}" hreflang="{% if page.locale == 'zh' %}en{% else %}zh-CN{% endif %}">{{ language_label }}</a></li>
             </ul>
         </div>
