@@ -1,14 +1,15 @@
+{% if page.locale == 'zh' %}{% assign profile = site.data.profile %}{% else %}{% assign profile = site.data.profile_en %}{% endif %}
 <div class="row mt-3">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body p-4">
                 <div class="row" data-masonry='{"percentPosition": true }'>
-                    {% if site.data.profile.education %}
+                    {% if profile.education %}
                     <div class="col-lg-6">
                         <div class="mx-2 my-1">
-                            <h6>教育经历 <span class="section-title-en">Education</span></h6>
+                            <h6>{% if page.locale == 'zh' %}教育经历 <span class="section-title-en">Education</span>{% else %}Education <span class="section-title-en">教育经历</span>{% endif %}</h6>
                             <ul class="list-unstyled mb-1">
-                                {% for item in site.data.profile.education %}
+                                {% for item in profile.education %}
                                 <li class="media mb-1">
                                     {% if item.logo %}<img src="{{ item.logo | relative_url }}" alt="" style="width: 18px;" class="mr-1 mt-1">{% else %}<span class="timeline-dot" aria-hidden="true"></span>{% endif %}
                                     <div class="media-body">
@@ -26,12 +27,12 @@
                     </div>
                     {% endif %}
 
-                    {% if site.data.profile.experience %}
+                    {% if profile.experience %}
                     <div class="col-lg-6">
                         <div class="mx-2 my-1">
-                            <h6>工作经历 <span class="section-title-en">Appointments</span></h6>
+                            <h6>{% if page.locale == 'zh' %}工作经历 <span class="section-title-en">Appointments</span>{% else %}Appointments <span class="section-title-en">工作经历</span>{% endif %}</h6>
                             <ul class="list-unstyled mb-1">
-                                {% for item in site.data.profile.experience %}
+                                {% for item in profile.experience %}
                                 <li class="media mb-1">
                                     {% if item.logo %}<img src="{{ item.logo | relative_url }}" alt="" style="width: 18px;" class="mr-1 mt-1">{% else %}<span class="timeline-dot" aria-hidden="true"></span>{% endif %}
                                     <div class="media-body">
@@ -49,12 +50,12 @@
                     </div>
                     {% endif %}
 
-                    {% if site.data.profile.awards %}
+                    {% if profile.awards %}
                     <div class="col-lg-6">
                         <div class="mx-2 my-1">
-                            <h6>荣誉与奖励 <span class="section-title-en">Honors</span></h6>
+                            <h6>{% if page.locale == 'zh' %}荣誉与奖励 <span class="section-title-en">Honors</span>{% else %}Honors <span class="section-title-en">荣誉与奖励</span>{% endif %}</h6>
                             <ul class="list small pl-3 mb-1">
-                                {% for item in site.data.profile.awards %}
+                                {% for item in profile.awards %}
                                 <li>
                                     <div class="d-flex">
                                         <div>{{ item.name }}</div>

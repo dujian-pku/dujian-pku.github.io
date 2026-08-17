@@ -42,9 +42,7 @@ exclude:
   - assets/css/blog.css
   - assets/css/images
   - assets/js/blog.js
-  - assets/js/common.js
   - assets/js/bubble_visual_hash.js
-  - assets/js/semantic_scholar_citation_count.js
   - assets/images/badges
   - assets/images/covers
   - assets/images/etc

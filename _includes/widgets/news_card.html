@@ -1,7 +1,7 @@
 {% assign news_by_year = site.news | sort: "date" | reverse | slice: 0, include.limit | group_by_exp: "item", "item.date | date: '%Y'" -%}
 
 <div class="my-3 bg-white shadow-sm rounded-xl">
-    <h6 class="p-3 mb-0 border-bottom border-gray">最新动态 <span class="section-title-en">News</span></h6>
+    <h6 class="p-3 mb-0 border-bottom border-gray">{% if page.locale == 'zh' %}最新动态 <span class="section-title-en">News</span>{% else %}News <span class="section-title-en">最新动态</span>{% endif %}</h6>
     <div class="px-3 pb-1 small">
         {% for year in news_by_year %}
         <div class="media py-1 {% if not_first -%}border-top border-gray{%- endif %}">
@@ -10,7 +10,7 @@
             <div class="media-body">
                 {% for item in year.items %}
                 <div class="my-1 d-flex">
-                    <div>{{ item.title }}</div>
+                    <div>{% if page.locale == 'zh' %}{{ item.title }}{% else %}{{ item.title_en }}{% endif %}</div>
                     <div class="ml-auto mt-auto text-muted no-break"><i>{{ item.date | date: "%m.%d" }}</i></div>
                 </div>
                 {% endfor %}

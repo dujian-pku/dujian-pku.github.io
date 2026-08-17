@@ -7,6 +7,8 @@
   {% assign language_url = page.alternate_url | default: '/' %}
   {% assign brand_primary = '杜建' %}
   {% assign brand_secondary = 'Jian Du' %}
+  {% assign nav_label = '主导航' %}
+  {% assign toggle_label = '展开导航' %}
 {% else %}
   {% assign home_url = '/' %}
   {% assign publications_url = '/publications/' %}
@@ -15,19 +17,26 @@
   {% assign language_label = '中文' %}
   {% assign language_url = page.alternate_url | default: '/zh/' %}
   {% assign brand_primary = 'Jian Du' %}
-  {% assign brand_secondary = 'Peking University' %}
+  {% assign brand_secondary = '杜建' %}
+  {% assign nav_label = 'Primary navigation' %}
+  {% assign toggle_label = 'Toggle navigation' %}
 {% endif %}
-<header class="site-header">
-  <div class="site-shell header-inner">
-    <a class="wordmark" href="{{ home_url | relative_url }}" aria-label="{{ home_label }}">
-      <strong>{{ brand_primary }}</strong>
-      <span>{{ brand_secondary }}</span>
-    </a>
-    <nav class="site-nav" aria-label="{% if page.locale == 'zh' %}主导航{% else %}Primary navigation{% endif %}">
-      <a{% if page.navbar_title == home_label %} class="active" aria-current="page"{% endif %} href="{{ home_url | relative_url }}">{{ home_label }}</a>
-      <a{% if page.navbar_title == publications_label %} class="active" aria-current="page"{% endif %} href="{{ publications_url | relative_url }}">{{ publications_label }}</a>
-      <a href="https://orcid.org/0000-0001-8436-778X" target="_blank" rel="noopener noreferrer">ORCID</a>
-      <a class="language-switch" href="{{ language_url | relative_url }}" hreflang="{% if page.locale == 'zh' %}en{% else %}zh-CN{% endif %}">{{ language_label }}</a>
-    </nav>
-  </div>
-</header>
+<nav class="navbar navbar-expand-sm navbar-light fixed-top mb-5 shadow-sm" aria-label="{{ nav_label }}">
+    <div class="container-lg">
+        <a class="navbar-brand" href="{{ home_url | relative_url }}" aria-label="{{ home_label }}">
+            <strong>{{ brand_primary }}</strong>
+            <span class="navbar-brand-en">{{ brand_secondary }}</span>
+        </a>
+        <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="{{ toggle_label }}">
+            <span class="sr-only">{{ toggle_label }}</span><i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item{% if page.navbar_title == home_label %} active{% endif %}"><a class="nav-link" href="{{ home_url | relative_url }}">{{ home_label }}</a></li>
+                <li class="nav-item{% if page.navbar_title == publications_label %} active{% endif %}"><a class="nav-link" href="{{ publications_url | relative_url }}">{{ publications_label }}</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://orcid.org/0000-0001-8436-778X" target="_blank" rel="noopener noreferrer">ORCID <span aria-hidden="true">↗</span></a></li>
+                <li class="nav-item"><a class="nav-link language-switch" href="{{ language_url | relative_url }}" hreflang="{% if page.locale == 'zh' %}en{% else %}zh-CN{% endif %}">{{ language_label }}</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

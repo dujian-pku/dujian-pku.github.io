@@ -1,15 +1,16 @@
+{% if page.locale == 'zh' %}{% assign profile = site.data.profile %}{% else %}{% assign profile = site.data.profile_en %}{% endif %}
 <section class="row mt-3" aria-labelledby="research-heading">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body p-4">
-                <h3 id="research-heading" class="card-section-heading">研究方向 <span class="section-title-en">Research</span></h3>
+                <h3 id="research-heading" class="card-section-heading">{% if page.locale == 'zh' %}研究方向 <span class="section-title-en">Research</span>{% else %}Research <span class="section-title-en">研究方向</span>{% endif %}</h3>
                 <div class="research-grid">
-                    {% for item in site.data.profile.research_areas %}
+                    {% for item in profile.research_areas %}
                     <article class="research-item">
                         <div class="research-index">0{{ forloop.index }}</div>
                         <div>
                             <h4>{{ item.title }}</h4>
-                            <div class="research-en">{{ item.en }}</div>
+                            {% if item.en %}<div class="research-en">{{ item.en }}</div>{% endif %}
                             <p>{{ item.description }}</p>
                         </div>
                     </article>

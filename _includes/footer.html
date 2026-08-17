@@ -1,6 +1,12 @@
-<footer class="site-footer">
-  <div class="site-shell footer-inner">
-    <span>© {{ "now" | date: "%Y" }} {% if page.locale == 'zh' %}杜建{% else %}Jian Du{% endif %}</span>
-    <span>{% if page.locale == 'zh' %}北京大学 · 可计算医学知识课题组{% else %}Peking University · Computable Biomedical Knowledge Lab{% endif %}</span>
-  </div>
+<footer class="footer border-top py-2 mt-5 bg-white small">
+    <div class="container-lg">
+        <div class="row my-3">
+            <div class="col-6 text-muted">
+                {% if page.locale == 'zh' %}更新于 {{ "now" | date: "%Y年%m月" }}{% else %}Updated {{ "now" | date: "%B %Y" }}{% endif %}
+            </div>
+            <div class="col-6 text-right text-muted">
+                {% if page.locale == 'zh' %}北京大学 · 可计算医学知识课题组{% else %}Peking University · Computable Biomedical Knowledge Lab{% endif %}
+            </div>
+        </div>
+    </div>
 </footer>
