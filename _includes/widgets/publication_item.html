@@ -1,7 +1,7 @@
 {% assign item = include.item %}
 {% if page.locale == 'zh' and item.links_zh %}{% assign publication_links = item.links_zh %}{% else %}{% assign publication_links = item.links %}{% endif %}
 {% capture publication_venue %}
-<strong class="publication-venue-metrics"><i>{{ item.pub }}</i>{% if item.jif %} · {% if page.locale == 'zh' %}影响因子 {{ item.jif }}（{{ item.jif_year }}）{% else %}JIF {{ item.jif }} ({{ item.jif_year }}){% endif %} · JCR {{ item.jcr_quartile }}{% endif %}</strong>
+<strong class="publication-venue-metrics"><i>{{ item.pub }}</i>{% if item.jif %} · {% if page.locale == 'zh' %}影响因子 {{ item.jif }}{% else %}JIF {{ item.jif }}{% endif %} · JCR {{ item.jcr_quartile }}{% endif %}</strong>
 {% endcapture %}
 <div class="d-none d-md-block publication-entry">
     <div class="row no-gutters {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray">
