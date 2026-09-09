@@ -7,7 +7,7 @@
                 <div class="academic-list">
                     {% for item in profile.funding %}
                     <article class="academic-item">
-                        <div class="academic-meta">{{ item.agency }}{% if item.number != "" %} · {{ item.number }}{% endif %} · {{ item.date }}{% if item.amount %} · {{ item.amount }}{% endif %}</div>
+                        <div class="academic-meta">{{ item.agency }}{% if item.number != "" %} · {{ item.number }}{% endif %} · {{ item.date }}</div>
                         <div>{{ item.name }}</div>
                     </article>
                     {% endfor %}
