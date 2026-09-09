@@ -93,6 +93,11 @@ platforms:
   description: 基于知识图谱发现暴露与结局之间的候选混杂、中介及对撞变量。
 
 funding:
+- name: 基于因果图理论的公共数据库研究质量评估与治理
+  agency: 国家自然科学基金面上项目 · 主持
+  number: "72674017"
+  date: 2026年度获批
+  amount: 41万元
 - name: Using Large Language Models and Biomedical Ontologies for Mobilizing the Construction and Applications of Directed Acyclic Graphs in Observational Health Data Research
   agency: Michigan Medicine–PKUHSC Joint Institute Award · Co-PI
   number: BMU2026JIUM001

@@ -86,6 +86,11 @@ platforms:
   description: Knowledge-graph-assisted identification of candidate confounders, mediators, and colliders between an exposure and an outcome.
 
 funding:
+- name: Quality Assessment and Governance of Research Using Public Databases Based on Causal Graph Theory
+  agency: National Natural Science Foundation of China · General Program · PI
+  number: "72674017"
+  date: Awarded in 2026
+  amount: CNY 410,000
 - name: Using Large Language Models and Biomedical Ontologies for Mobilizing the Construction and Applications of Directed Acyclic Graphs in Observational Health Data Research
   agency: Michigan Medicine–PKUHSC Joint Institute Award · Co-PI
   number: BMU2026JIUM001
