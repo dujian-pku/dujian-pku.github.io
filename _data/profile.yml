@@ -4,7 +4,7 @@ navbar_name: "杜建"
 affiliation_short: "北京大学健康医疗大数据国家研究院"
 affiliation_url: "https://www.nihds.pku.edu.cn/"
 role_line: "长聘副教授 · 研究员 · 博士生导师"
-lab_line: "可计算医学知识课题组负责人"
+lab_line: "医学知识计算课题组负责人"
 affiliation_lines:
 - 北京大学
 - 健康医疗大数据国家研究院
@@ -13,12 +13,12 @@ role_lines:
 - 研究员
 - 博士生导师
 lab_lines:
-- 可计算医学知识课题组负责人
+- 医学知识计算课题组负责人
 
 positions:
 - name: 北京大学健康医疗大数据国家研究院
 - name: 长聘副教授、研究员、博士生导师
-- name: 可计算医学知识课题组 PI
+- name: 医学知识计算课题组 PI
 
 email: "dujian@bjmu.edu.cn"
 orcid: 0000-0001-8436-778X
@@ -28,7 +28,7 @@ institutional_profile: "https://dshm.bjmu.edu.cn/info/1251/1534.htm"
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    杜建，南京大学管理学博士（信息资源管理），现任北京大学健康医疗大数据国家研究院长聘副教授、研究员、博士生导师，北京大学可计算医学知识课题组负责人。2019年11月加入北京大学医学部，此前任职于北京协和医学院医学信息研究所。
+    杜建，南京大学管理学博士（信息资源管理），现任北京大学健康医疗大数据国家研究院长聘副教授、研究员、博士生导师，北京大学医学知识计算课题组负责人。2019年11月加入北京大学医学部，此前任职于北京协和医学院医学信息研究所。
   </p>
   <p>
     长期从事医学健康与数据科学交叉研究，关注健康医疗大数据、医学知识图谱、生物医学自然语言处理、因果图与智能循证决策。主持国家重点研发计划青年科学家项目、国家自然科学基金面上项目等，在 <em>Nature Biotechnology</em>、<em>Nature Communications</em>、<em>JAMA Network Open</em> 和 <em>JAMIA</em> 等期刊发表研究成果。
