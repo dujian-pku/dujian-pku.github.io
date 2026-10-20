@@ -38,10 +38,19 @@
                                     <div class="media-body">
                                         <div class="experience-primary">{{ item.name }}</div>
                                         {% if item.dept %}<div class="experience-secondary">{{ item.dept }}</div>{% endif %}
+                                        {% if item.positions %}
+                                        {% for position in item.positions %}
+                                        <div class="experience-secondary d-flex">
+                                            <div>{{ position.position }}</div>
+                                            <div class="experience-date mt-auto ml-auto no-break"><em>{{ position.date }}</em></div>
+                                        </div>
+                                        {% endfor %}
+                                        {% else %}
                                         <div class="experience-secondary d-flex">
                                             <div>{{ item.position }}</div>
                                             <div class="experience-date mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
                                         </div>
+                                        {% endif %}
                                     </div>
                                 </li>
                                 {% endfor %}
